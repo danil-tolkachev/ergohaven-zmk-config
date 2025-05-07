@@ -1,5 +1,7 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 &mt {
     quick-tap-ms = <200>;
@@ -68,10 +70,10 @@
 
         adj {
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R         &kp T                     &kp Y   &kp U         &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                     &kp H   &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V         &kp B                     &kp N   &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &trans        &trans  &trans    &trans  &trans  &trans
+  &bootloader     &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_CLR
+  &hml LGUI LGUI  &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr C_VOL_DN J  &hmr RSHFT K_MUTE  &hmr LALT C_VOL_UP  &hmr RGUI RGUI
+  &none           &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp K_PREV       &kp K_PLAY_PAUSE   &kp K_NEXT          &studio_unlock
+                                               &trans         &trans   &trans    &trans  &trans        &trans
             >;
         };
     };
