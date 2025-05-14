@@ -3,6 +3,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        encoder1: encoder1 {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER1";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -14,8 +23,8 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE    &kp ENTER  &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
 
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
             label = "Base";
         };
 
@@ -27,8 +36,8 @@
 &trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
                 &trans        &trans    &trans         &trans   &trans    &trans  &trans           &trans  &kp N0  &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
 
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
             label = "Navigation";
         };
 
@@ -40,8 +49,8 @@
 &trans  &trans    &kp LS(STAR)  &kp SEMI      &kp FSLH       &trans        &trans    &trans  &trans         &kp LS(PIPE)  &kp LS(TILDE)  &kp LS(AMPS)  &trans  &trans
                   &trans        &trans        &trans         &mo 3         &trans    &trans  &trans         &trans        &trans         &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
 
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
             label = "Symbols";
         };
 
@@ -53,8 +62,8 @@
 &trans          &trans        &trans        &trans        &trans        &trans          &trans    &trans  &trans  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &trans  &trans
                               &trans        &trans        &trans        &trans          &trans    &trans  &trans  &trans        &trans            &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
 
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp LEFT RIGHT>;
             label = "Media";
         };
     };
