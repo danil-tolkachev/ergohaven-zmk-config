@@ -35,10 +35,10 @@ include:
     shield: op36_right
 
   - board: ergohaven
-    shield: k03_left
+    shield: k03_left nice_view
     snippet: zmk-usb-logging
   - board: ergohaven
-    shield: k03_right
+    shield: k03_right nice_view
     snippet: zmk-usb-logging
 
   - board: ergohaven
