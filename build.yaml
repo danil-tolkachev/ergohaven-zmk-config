@@ -37,7 +37,6 @@ include:
   - board: ergohaven
     shield: k03_left
     snippet: zmk-usb-logging
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: ergohaven
     shield: k03_right
 
