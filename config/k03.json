@@ -114,6 +114,6 @@
         "identifier": "encoder_R3",
         "compatible": "alps,ec11",
         "label": "ENCODER_R3"
-      },
+      }
     ]
   }
