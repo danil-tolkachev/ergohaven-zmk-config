@@ -39,6 +39,7 @@ include:
     snippet: zmk-usb-logging
   - board: ergohaven
     shield: k03_right
+    snippet: zmk-usb-logging
 
   - board: ergohaven
     shield: settings_reset
