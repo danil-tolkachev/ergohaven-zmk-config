@@ -26,12 +26,12 @@
 
             label = "Base";
             sensor-bindings =
-                <&inc_dec_kp NUMBER_1 NUMBER_2>,
-                <&inc_dec_kp NUMBER_3 NUMBER_4>,
-                <&inc_dec_kp N5 NUMBER_6>,
-                <&inc_dec_kp N7 N8>,
-                <&inc_dec_kp N9 N0>,
-                <&inc_dec_kp A B>;
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>;
         };
 
         navigation {
