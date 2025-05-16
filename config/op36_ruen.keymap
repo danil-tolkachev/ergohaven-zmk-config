@@ -57,13 +57,11 @@
         en {
             bindings = <&layer_en>;
             key-positions = <2 1>;
-            layers = <0 1>;
         };
 
         ru {
             bindings = <&layer_ru>;
             key-positions = <2 3>;
-            layers = <0 1>;
         };
     };
 
