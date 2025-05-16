@@ -54,12 +54,12 @@
             layers = <1>;
         };
 
-        en {
+        cmben {
             bindings = <&layer_en>;
-            key-positions = <2 1>;
+            key-positions = <1 2>;
         };
 
-        ru {
+        cmbru {
             bindings = <&layer_ru>;
             key-positions = <2 3>;
         };
