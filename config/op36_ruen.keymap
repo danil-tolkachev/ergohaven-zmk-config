@@ -90,7 +90,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 5 &to_ru>;
+            bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
         };
 
