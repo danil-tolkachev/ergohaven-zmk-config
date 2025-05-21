@@ -56,9 +56,18 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &tog 5  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+            >;
+        };
+
+        Scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -115,7 +124,7 @@
         layers = <1>;
         input-processors =
             <&zip_xy_scaler 1 32>,
-            //   , <&zip_xy_transform INPUT_TRANSFORM_X_INVERT> /* natural scroll */,,
+            //   , <&zip_xy_transform INPUT_TRANSFORM_X_INVERT> /* natural scroll */,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
