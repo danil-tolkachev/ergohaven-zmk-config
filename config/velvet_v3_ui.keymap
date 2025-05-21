@@ -1,6 +1,9 @@
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -8,10 +11,10 @@
 
         Base {
             bindings = <
-&kp UNDER  &kp Q  &kp W             &kp E         &kp R         &kp T                                     &kp Y      &kp U          &kp I      &kp O     &kp P      &kp LEFT_BRACKET
-&kp MINUS  &kp A  &kp S             &kp D         &kp F         &kp G                                     &kp H      &kp J          &kp K      &kp L     &kp SEMI   &kp SQT
-&kp GRAVE  &kp Z  &kp X             &kp C         &kp V         &kp B                                     &kp N      &kp M          &kp COMMA  &kp DOT   &kp SLASH  &kp RIGHT_BRACKET
-                  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &lt 2 TAB    &lt 1 ENTER  &kp SPACE  &kp BACKSPACE  &kp LBKT   &kp RBKT
+&kp UNDER  &kp Q  &kp W             &kp E         &kp R         &kp T                                     &kp Y      &kp U  &kp I      &kp O     &kp P      &kp LEFT_BRACKET
+&kp MINUS  &kp A  &kp S             &kp D         &kp F         &kp G                                     &kp H      &kp J  &kp K      &kp L     &kp SEMI   &kp SQT
+&kp GRAVE  &kp Z  &kp X             &kp C         &kp V         &kp B                                     &kp N      &kp M  &kp COMMA  &kp DOT   &kp SLASH  &kp RIGHT_BRACKET
+                  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &lt 2 TAB    &lt 1 ENTER  &kp SPACE  &mo 4  &kp LBKT   &kp RBKT
             >;
 
             label = "Base";
@@ -48,6 +51,15 @@
             >;
 
             label = "Adjust";
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+            >;
         };
 
         User0 {
@@ -93,5 +105,17 @@
 
             label = "User3";
         };
+    };
+};
+
+&trackball_listener {
+    input-processors = <&zip_xy_scaler 1 2>;
+
+    scroller {
+        layers = <1>;
+        input-processors =
+            <&zip_xy_scaler 1 32>,
+            //   , <&zip_xy_transform INPUT_TRANSFORM_X_INVERT> /* natural scroll */,,
+            <&zip_xy_to_scroll_mapper>;
     };
 };
