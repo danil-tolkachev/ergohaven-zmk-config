@@ -65,6 +65,30 @@
             key-positions = <3 13>;
             layers = <0 1>;
         };
+
+        endot {
+            bindings = <&kp DOT>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        rudot {
+            bindings = <&kp RU_DOT>;
+            key-positions = <12 13>;
+            layers = <1>;
+        };
+
+        encomma {
+            bindings = <&kp COMMA>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+
+        rucomma {
+            bindings = <&kp RU_COMMA>;
+            key-positions = <11 12>;
+            layers = <1>;
+        };
     };
 
     macros {
