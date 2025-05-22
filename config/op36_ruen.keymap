@@ -141,7 +141,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                                          &kp Y        &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                                          &kp N        &kp M         &none         &none        &kp SQT
-                                          &mt LCTRL DEL  &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE  &lt 8 TAB
+                                          &mt LCTRL DEL  &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE  &lt 6 TAB
             >;
         };
 
@@ -150,7 +150,7 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &mt LCTRL DEL             &mt LSHFT ESC       &lt 5 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE         &lt 8 TAB
+                                                                                   &mt LCTRL DEL             &mt LSHFT ESC       &lt 5 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE         &lt 6 TAB
             >;
         };
 
@@ -218,5 +218,17 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        en_num {
+            if-layers = <0 6>;
+            then-layer = <4>;
+        };
+
+        ru_num {
+            if-layers = <1 6>;
+            then-layer = <5>;
+        };
+    };
 };
