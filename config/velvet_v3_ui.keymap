@@ -143,12 +143,12 @@
     input-processors = <&zip_xy_scaler 1 2>;
 
     scroller {
-        layers = <2>;
+        layers = <2 5>;
         input-processors = <&zip_xy_scaler 1 32>, <&zip_xy_to_scroll_mapper>;
     };
 
     sniper {
-        layers = <1>;
+        layers = <1 6>;
         input-processors = <&zip_xy_scaler 1 4>;
     };
 };
