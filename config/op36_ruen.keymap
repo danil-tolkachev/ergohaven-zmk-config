@@ -45,30 +45,42 @@
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <6 16>;
-            layers = <1>;
+            layers = <2 3>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <7 17>;
-            layers = <1>;
+            layers = <2 3>;
         };
 
         en {
             bindings = <&layer_en>;
-            key-positions = <2 12>;
-            layers = <0 1>;
+            key-positions = <3 13>;
+            layers = <2>;
         };
 
         ru {
             bindings = <&layer_ru>;
             key-positions = <3 13>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         yo {
             bindings = <&kp RU_CYRILLIC_IO>;
             key-positions = <4 14>;
+            layers = <2>;
+        };
+
+        en_mac {
+            bindings = <&layer_en_mac>;
+            key-positions = <3 13>;
+            layers = <3>;
+        };
+
+        ru_mac {
+            bindings = <&layer_ru_mac>;
+            key-positions = <3 13>;
             layers = <1>;
         };
     };
@@ -98,7 +110,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_ru>;
+            bindings = <&to 2 &to_ru>;
             label = "LAYER_RU";
         };
 
@@ -113,6 +125,60 @@
 
             label = "EN";
         };
+
+        to_en_mac: to_en_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "TO_EN_MAC";
+        };
+
+        to_ru_mac: to_ru_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "TO_RU_MAC";
+        };
+
+        layer_en_mac: layer_en_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &to_en_mac>;
+            label = "LAYER_EN_MAC";
+        };
+
+        layer_ru_mac: layer_ru_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 3 &to_ru_mac>;
+            label = "LAYER_RU_MAC";
+        };
+
+        en_mac: en_mac {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&to_en_mac &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 10>,
+                <&to_ru_mac>,
+                <&macro_wait_time 10>;
+
+            label = "EN_MAC";
+        };
+
+        bt_pc: bt_pc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &bt BT_SEL 0>;
+            label = "BT_PC";
+        };
+
+        bt_mac: bt_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &bt BT_SEL 1>;
+            label = "BT_MAC";
+        };
     };
 
     keymap {
@@ -123,7 +189,16 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                                          &kp Y        &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                                          &kp N        &kp M         &none         &none        &kp SQT
-                                          &mt LCTRL DEL  &mt LSHFT ESC  &lt 2 BACKSPACE    &lt 4 ENTER  &lt 5 SPACE  &lt 6 TAB
+                                          &mt LCTRL DEL  &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 6 ENTER  &lt 8 SPACE  &lt 9 TAB
+            >;
+        };
+
+        en_mac {
+            bindings = <
+  &kp Q        &kp W        &kp E         &kp R         &kp T                                          &kp Y        &kp U         &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V         &kp B                                          &kp N        &kp M         &none         &none        &kp SQT
+                                          &mt LGUI DEL  &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 6 ENTER  &lt 8 SPACE  &lt 9 TAB
             >;
         };
 
@@ -132,34 +207,52 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &mt LCTRL DEL             &mt LSHFT ESC       &lt 3 BACKSPACE    &lt 4 ENTER  &lt 5 SPACE         &lt 6 TAB
+                                                                                   &mt LCTRL DEL             &mt LSHFT ESC       &lt 5 BACKSPACE    &lt 6 ENTER  &lt 8 SPACE         &lt 9 TAB
+            >;
+        };
+
+        ru_mac {
+            bindings = <
+  &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
+  &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
+                                                                                   &mt LGUI DEL              &mt LSHFT ESC       &lt 5 BACKSPACE    &lt 6 ENTER  &lt 8 SPACE         &lt 9 TAB
             >;
         };
 
         sym_en {
             bindings = <
-  &kp GRAVE  &kp AT_SIGN  &kp HASH  &kp DLLR   &kp PRCNT                        &kp LBRC     &kp LBKT   &kp RBKT  &kp RBRC   &kp DQT
-  &kp PLUS   &kp MINUS    &kp DOT   &kp COMMA  &kp EQUAL                        &kp EXCL     &kp LPAR   &kp RPAR  &kp COLON  &kp SEMICOLON
-  &kp TILDE  &kp STAR     &kp PIPE  &kp AMPS   &kp BSLH                         &kp QMARK    &kp CARET  &kp LT    &kp GT     &kp FSLH
-                                    &none      &mo 6      &none    &lt 7 ENTER  &lt 6 SPACE  &kp UNDER
+  &kp GRAVE  &kp AT_SIGN  &kp HASH  &kp DLLR   &kp PRCNT                         &kp LBRC     &kp LBKT   &kp RBKT  &kp RBRC   &kp DQT
+  &kp PLUS   &kp MINUS    &kp DOT   &kp COMMA  &kp EQUAL                         &kp EXCL     &kp LPAR   &kp RPAR  &kp COLON  &kp SEMICOLON
+  &kp TILDE  &kp STAR     &kp PIPE  &kp AMPS   &kp BSLH                          &kp QMARK    &kp CARET  &kp LT    &kp GT     &kp FSLH
+                                    &none      &mo 9      &none    &lt 10 ENTER  &lt 9 SPACE  &kp UNDER
             >;
         };
 
         sym_ru {
             bindings = <
-  &en GRAVE  &en AT_SIGN  &en HASH    &en DLLR      &kp PRCNT                               &en LBRC      &en LBKT   &en RBKT  &en RBRC      &kp RU_DQT
-  &kp PLUS   &kp MINUS    &kp RU_DOT  &kp RU_COMMA  &kp EQUAL                               &kp EXCL      &kp LPAR   &kp RPAR  &kp RU_COLON  &kp RU_SEMI
-  &en TILDE  &kp STAR     &en PIPE    &en AMPS      &kp RU_BACKSLASH                        &kp RU_QMARK  &en CARET  &en LT    &en GT        &kp RU_FSLH
-                                      &none         &mo 6             &none    &lt 7 ENTER  &lt 6 SPACE   &kp UNDER
+  &en GRAVE  &en AT_SIGN  &en HASH    &en DLLR      &kp PRCNT                                &en LBRC      &en LBKT   &en RBKT  &en RBRC      &kp RU_DQT
+  &kp PLUS   &kp MINUS    &kp RU_DOT  &kp RU_COMMA  &kp EQUAL                                &kp EXCL      &kp LPAR   &kp RPAR  &kp RU_COLON  &kp RU_SEMI
+  &en TILDE  &kp STAR     &en PIPE    &en AMPS      &kp RU_BACKSLASH                         &kp RU_QMARK  &en CARET  &en LT    &en GT        &kp RU_FSLH
+                                      &none         &mo 9             &none    &lt 10 ENTER  &lt 9 SPACE   &kp UNDER
             >;
         };
 
         nav {
             bindings = <
-  &kp LC(Q)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(GRAVE)                               &kp HOME      &kp PG_DN  &kp PG_UP  &kp END        &kp INS
-  &kp LGUI   &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                   &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                                   &kp LC(LEFT)  &none      &none      &kp LC(RIGHT)  &kp LC(FSLH)
-                                      &mt LCTRL DEL  &mt LSHFT ESCAPE  &lt 7 BACKSPACE    &none  &none         &none
+  &kp LC(Q)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(GRAVE)                                &kp HOME      &kp PG_DN  &kp PG_UP  &kp END        &kp INS
+  &kp LGUI   &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                                    &kp LC(LEFT)  &none      &none      &kp LC(RIGHT)  &kp LC(FSLH)
+                                      &mt LCTRL DEL  &mt LSHFT ESCAPE  &lt 10 BACKSPACE    &none  &none         &none
+            >;
+        };
+
+        nav_mac {
+            bindings = <
+  &kp LG(Q)  &kp LG(W)  &kp LG(LBKT)  &kp LC(RBKT)   &kp LG(GRAVE)                                &kp HOME      &kp PG_DN  &kp PG_UP  &kp END        &kp INS
+  &kp LGUI   &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LA(BACKSPACE)
+  &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)      &kp LC(B)                                    &kp LA(LEFT)  &none      &none      &kp LA(RIGHT)  &kp LA(FSLH)
+                                      &mt LCTRL DEL  &mt LSHFT ESCAPE  &lt 10 BACKSPACE    &none  &none         &none
             >;
         };
 
@@ -183,10 +276,10 @@
 
         adj {
             bindings = <
-  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &kp C_BRI_DN  &kp C_BRI_UP  &none       &kp PRINTSCREEN
-  &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &none         &none                         &none  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp LA(PRINTSCREEN)
-  &none         &none         &none         &none         &none                         &none  &kp C_PREV    &kp C_NEXT    &kp C_PP    &kp LS(PRINTSCREEN)
-                                            &none         &none         &none    &none  &none  &none
+  &bt_pc      &bt_mac       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &kp C_BRI_DN  &kp C_BRI_UP  &none       &kp PRINTSCREEN
+  &bt BT_CLR  &out OUT_BLE  &out OUT_USB  &none         &none                         &none  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp LA(PRINTSCREEN)
+  &none       &none         &none         &none         &none                         &none  &kp C_PREV    &kp C_NEXT    &kp C_PP    &kp LS(PRINTSCREEN)
+                                          &none         &none         &none    &none  &none  &none
             >;
         };
 
