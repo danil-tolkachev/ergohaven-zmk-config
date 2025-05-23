@@ -240,9 +240,9 @@
 
         sym_ru_mac {
             bindings = <
-  &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                         &en_mac LBRC  &kp LS(GRAVE)  &kp LC(GRAVE)  &en_mac RBRC  &kp RU_DQT
-  &kp PLUS       &kp MINUS        &kp LS(N7)    &kp LS(N6)    &kp EQUAL                             &kp EXCL      &kp LPAR       &kp RPAR       &kp LS(N5)    &kp LS(N8)
-  &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                          &kp QMARK     &en_mac CARET  &en_mac LT     &en_mac GT    &kp SLASH
+  &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                         &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT
+  &kp PLUS       &kp MINUS        &kp LS(N7)    &kp LS(N6)    &kp EQUAL                             &kp EXCL      &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)
+  &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                          &kp QMARK     &en_mac CARET  &en_mac LT  &en_mac GT    &kp SLASH
                                                 &kp N6        &mo 10         &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
