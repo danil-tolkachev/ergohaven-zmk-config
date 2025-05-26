@@ -186,10 +186,10 @@
 
         en {
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R         &kp T                                          &kp Y        &kp U         &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V         &kp B                                          &kp N        &kp M         &none         &none        &kp SQT
-                                          &mt LCTRL N0  &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 7 ENTER  &lt 9 SPACE  &lt 10 TAB
+  &kp Q        &kp W        &kp E         &kp R          &kp T                                          &kp Y        &kp U         &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V          &kp B                                          &kp N        &kp M         &none         &none        &kp SQT
+                                          &mt LCTRL DEL  &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 7 ENTER  &lt 9 SPACE  &lt 10 TAB
             >;
         };
 
@@ -198,7 +198,7 @@
   &kp Q        &kp W        &kp E         &kp R         &kp T                                          &kp Y        &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V         &kp B                                          &kp N        &kp M         &none         &none        &kp SQT
-                                          &mt LGUI N1   &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 8 ENTER  &lt 9 SPACE  &lt 10 TAB
+                                          &mt LGUI DEL  &mt LSHFT ESC  &lt 4 BACKSPACE    &lt 8 ENTER  &lt 9 SPACE  &lt 10 TAB
             >;
         };
 
@@ -207,7 +207,7 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &mt LCTRL N2              &mt LSHFT ESC       &lt 5 BACKSPACE    &lt 7 ENTER  &lt 9 SPACE         &lt 10 TAB
+                                                                                   &mt LCTRL DEL             &mt LSHFT ESC       &lt 5 BACKSPACE    &lt 7 ENTER  &lt 9 SPACE         &lt 10 TAB
             >;
         };
 
@@ -216,7 +216,7 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &mt LGUI N3               &mt LSHFT ESC       &lt 6 BACKSPACE    &lt 8 ENTER  &lt 9 SPACE         &lt 10 TAB
+                                                                                   &mt LGUI DEL              &mt LSHFT ESC       &lt 6 BACKSPACE    &lt 8 ENTER  &lt 9 SPACE         &lt 10 TAB
             >;
         };
 
@@ -225,7 +225,7 @@
   &kp GRAVE  &kp AT_SIGN  &kp HASH  &kp DLLR   &kp PRCNT                         &kp LBRC      &kp LBKT   &kp RBKT  &kp RBRC   &kp DQT
   &kp PLUS   &kp MINUS    &kp DOT   &kp COMMA  &kp EQUAL                         &kp EXCL      &kp LPAR   &kp RPAR  &kp COLON  &kp SEMI
   &kp TILDE  &kp STAR     &kp PIPE  &kp AMPS   &kp BSLH                          &kp QMARK     &kp CARET  &kp LT    &kp GT     &kp FSLH
-                                    &kp N4     &mo 10     &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
+                                    &kp DEL    &mo 10     &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
 
@@ -234,7 +234,7 @@
   &en GRAVE  &en AT_SIGN  &en HASH    &en DLLR      &kp PRCNT                                &en LBRC      &en LBKT   &en RBKT  &en RBRC      &kp RU_DQT
   &kp PLUS   &kp MINUS    &kp RU_DOT  &kp RU_COMMA  &kp EQUAL                                &kp EXCL      &kp LPAR   &kp RPAR  &kp RU_COLON  &kp RU_SEMI
   &en TILDE  &kp STAR     &en PIPE    &en AMPS      &kp RU_BACKSLASH                         &kp RU_QMARK  &en CARET  &en LT    &en GT        &kp RU_FSLH
-                                      &kp N5        &mo 10            &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
+                                      &kp DEL       &mo 10            &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
 
@@ -243,7 +243,7 @@
   &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                         &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT
   &kp PLUS       &kp MINUS        &kp LS(N7)    &kp LS(N6)    &kp EQUAL                             &kp EXCL      &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)
   &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                          &kp QMARK     &en_mac CARET  &en_mac LT  &en_mac GT    &kp SLASH
-                                                &kp N6        &mo 10         &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
+                                                &kp DEL       &mo 10         &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
 
@@ -258,10 +258,10 @@
 
         nav_mac {
             bindings = <
-  &kp LG(Q)  &kp LG(W)  &kp LG(LBKT)  &kp LC(RBKT)   &kp LG(GRAVE)                                &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp INS
-  &kp LGUI   &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LA(BACKSPACE)
-  &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)      &kp LC(B)                                    &kp LA(LEFT)  &none      &none      &kp LA(RIGHT)  &kp LA(FSLH)
-                                      &mt LCTRL DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none
+  &kp LG(Q)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(GRAVE)                                &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp INS
+  &kp LGUI   &kp LALT   &kp LSHFT     &kp LCTRL     &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LA(BACKSPACE)
+  &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LC(B)                                    &kp LA(LEFT)  &none      &none      &kp LA(RIGHT)  &kp LG(FSLH)
+                                      &mt LGUI DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none
             >;
         };
 
