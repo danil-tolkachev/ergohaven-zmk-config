@@ -83,6 +83,18 @@
             key-positions = <3 13>;
             layers = <1>;
         };
+
+        en_nums {
+            bindings = <&layer_combo 4 10>;
+            key-positions = <32 31>;
+            layers = <0>;
+        };
+
+        ru_nums {
+            bindings = <&layer_combo 5 10>;
+            key-positions = <32 31>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -178,6 +190,13 @@
             #binding-cells = <0>;
             bindings = <&to 1 &bt BT_SEL 1>;
             label = "BT_MAC";
+        };
+
+        layer_combo: layer_combo {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &mo MACRO_PLACEHOLDER &macro_param_2to1 &mo MACRO_PLACEHOLDER>;
+            label = "LAYER_COMBO";
         };
     };
 
