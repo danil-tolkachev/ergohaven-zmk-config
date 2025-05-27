@@ -87,13 +87,19 @@
         en_nums {
             bindings = <&layer_combo 4 10>;
             key-positions = <32 31>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         ru_nums {
             bindings = <&layer_combo 5 10>;
             key-positions = <32 31>;
             layers = <2>;
+        };
+
+        ru_mac_nums {
+            bindings = <&layer_combo 6 10>;
+            key-positions = <32 31>;
+            layers = <3>;
         };
     };
 
