@@ -109,13 +109,13 @@
         };
 
         tmux_hor {
-            bindings = <&kp PRCNT>;
+            bindings = <&tmux PRCNT>;
             key-positions = <23 24>;
             layers = <7 8>;
         };
 
         tmux_ver {
-            bindings = <&kp DQT>;
+            bindings = <&tmux DQT>;
             key-positions = <24 14>;
             layers = <7 8>;
         };
@@ -227,6 +227,13 @@
                 <&macro_param_2to1 &mo MACRO_PLACEHOLDER &macro_param_1to1 &mo MACRO_PLACEHOLDER>;
 
             label = "LAYER_COMBO";
+        };
+
+        tmux: tmux {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp LC(B) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TMUX";
         };
     };
 
