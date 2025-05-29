@@ -107,30 +107,6 @@
             key-positions = <16 26>;
             layers = <0 1 2 3 4 5 6 10>;
         };
-
-        copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <12 22>;
-            layers = <0 2 7>;
-        };
-
-        cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <11 21>;
-            layers = <0 2 7>;
-        };
-
-        paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <13 23>;
-            layers = <0 2 7>;
-        };
-
-        undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <10 20>;
-            layers = <0 2 7>;
-        };
     };
 
     macros {
