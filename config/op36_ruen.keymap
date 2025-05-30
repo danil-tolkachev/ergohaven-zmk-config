@@ -278,27 +278,27 @@
 
         sym_en {
             bindings = <
-  &kp GRAVE  &kp AT_SIGN  &kp HASH  &kp DLLR   &kp PRCNT                         &kp LBRC      &kp LBKT   &kp RBKT  &kp RBRC   &kp DQT
+  &kp TILDE  &kp AT_SIGN  &kp HASH  &kp DLLR   &kp PRCNT                         &kp LBRC      &kp LBKT   &kp RBKT  &kp RBRC   &kp GRAVE
   &kp PLUS   &kp MINUS    &kp DOT   &kp COMMA  &kp EQUAL                         &kp EXCL      &kp LPAR   &kp RPAR  &kp COLON  &kp SEMI
-  &kp TILDE  &kp STAR     &kp PIPE  &kp AMPS   &kp BSLH                          &kp QMARK     &kp CARET  &kp LT    &kp GT     &kp FSLH
+  &kp FSLH   &kp STAR     &kp PIPE  &kp AMPS   &kp BSLH                          &kp QMARK     &kp CARET  &kp LT    &kp GT     &kp DQT
                                     &kp DEL    &mo 10     &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
 
         sym_ru {
             bindings = <
-  &en GRAVE  &en AT_SIGN  &en HASH    &en DLLR      &kp PRCNT                                &en LBRC      &en LBKT   &en RBKT  &en RBRC      &kp RU_DQT
-  &kp PLUS   &kp MINUS    &kp RU_DOT  &kp RU_COMMA  &kp EQUAL                                &kp EXCL      &kp LPAR   &kp RPAR  &kp RU_COLON  &kp RU_SEMI
-  &en TILDE  &kp STAR     &en PIPE    &en AMPS      &kp RU_BACKSLASH                         &kp RU_QMARK  &en CARET  &en LT    &en GT        &kp RU_FSLH
-                                      &kp DEL       &mo 10            &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
+  &en TILDE    &en AT_SIGN  &en HASH    &en DLLR      &kp PRCNT                                &en LBRC      &en LBKT   &en RBKT  &en RBRC      &en GRAVE
+  &kp PLUS     &kp MINUS    &kp RU_DOT  &kp RU_COMMA  &kp EQUAL                                &kp EXCL      &kp LPAR   &kp RPAR  &kp RU_COLON  &kp RU_SEMI
+  &kp RU_FSLH  &kp STAR     &en PIPE    &en AMPS      &kp RU_BACKSLASH                         &kp RU_QMARK  &en CARET  &en LT    &en GT        &kp RU_DQT
+                                        &kp DEL       &mo 10            &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
 
         sym_ru_mac {
             bindings = <
-  &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                         &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT
+  &en_mac TILDE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                         &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &en_mac GRAVE
   &kp PLUS       &kp MINUS        &kp LS(N7)    &kp LS(N6)    &kp EQUAL                             &kp EXCL      &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)
-  &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                          &kp QMARK     &en_mac CARET  &en_mac LT  &en_mac GT    &kp SLASH
+  &kp FSLH       &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                          &kp QMARK     &en_mac CARET  &en_mac LT  &en_mac GT    &kp RU_DQT
                                                 &kp DEL       &mo 10         &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
