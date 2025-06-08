@@ -306,7 +306,7 @@
 
         sym_en {
             bindings = <
-  &kp TILDE  &kp AT_SIGN  &kp HASH  &kp DLLR   &kp PRCNT                         &kp LBRC      &kp LBKT   &kp RBKT  &kp RBRC   &kp GRAVE
+  &nums N1 TILDE  &nums N2 AT_SIGN  &nums N3 HASH  &nums N4 DLLR   &nums N5 PRCNT                         &nums N6 LBRC      &nums N7 LBKT   &nums N8 RBKT  &nums N9 RBRC   &nums N0GRAVE
   &kp PLUS   &kp MINUS    &kp DOT   &kp COMMA  &kp EQUAL                         &kp EXCL      &kp LPAR   &kp RPAR  &kp COLON  &kp SEMI
   &kp FSLH   &kp STAR     &kp PIPE  &kp AMPS   &kp BSLH                          &kp QMARK     &kp CARET  &kp LT    &kp GT     &kp DQT
                                     &kp DEL    &mo 10     &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
