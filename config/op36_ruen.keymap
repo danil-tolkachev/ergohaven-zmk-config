@@ -64,10 +64,34 @@
             layers = <2 3>;
         };
 
+        yo {
+            bindings = <&kp RU_CYRILLIC_IO>;
+            key-positions = <4 14>;
+            layers = <2>;
+        };
+
+        yo_mac {
+            bindings = <&kp NUBS>;
+            key-positions = <4 14>;
+            layers = <3>;
+        };
+
         en {
             bindings = <&layer_en>;
             key-positions = <2 12>;
             layers = <2>;
+        };
+
+        en_none {
+            bindings = <&none>;
+            key-positions = <2 12>;
+            layers = <0 1>;
+        };
+
+        en_mac {
+            bindings = <&layer_en_mac>;
+            key-positions = <2 12>;
+            layers = <3>;
         };
 
         ru {
@@ -76,16 +100,10 @@
             layers = <0>;
         };
 
-        yo {
-            bindings = <&kp RU_CYRILLIC_IO>;
-            key-positions = <4 14>;
-            layers = <2>;
-        };
-
-        en_mac {
-            bindings = <&layer_en_mac>;
-            key-positions = <2 12>;
-            layers = <3>;
+        ru_none {
+            bindings = <&none>;
+            key-positions = <3 13>;
+            layers = <3 2>;
         };
 
         ru_mac {
@@ -129,24 +147,6 @@
             key-positions = <24 14>;
             layers = <7 8>;
         };
-
-        yo_mac {
-            bindings = <&kp NUBS>;
-            key-positions = <4 3>;
-            layers = <3>;
-        };
-
-        ru_none {
-            bindings = <&none>;
-            key-positions = <3 13>;
-            layers = <3 2>;
-        };
-
-        en_none {
-            bindings = <&none>;
-            key-positions = <2 12>;
-            layers = <0 1>;
-        };
     };
 
     macros {
@@ -164,32 +164,6 @@
             label = "TO_EN";
         };
 
-        layer_en: layer_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0 &to_en>;
-            label = "LAYER_EN";
-        };
-
-        layer_ru: layer_ru {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 2 &to_ru>;
-            label = "LAYER_RU";
-        };
-
-        en: en {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_wait_time 10>,
-                <&to_ru>,
-                <&macro_wait_time 10>;
-
-            label = "EN";
-        };
-
         to_en_mac: to_en_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -204,6 +178,20 @@
             label = "TO_RU_MAC";
         };
 
+        layer_en: layer_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &to_en>;
+            label = "LAYER_EN";
+        };
+
+        layer_ru: layer_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 2 &to_ru>;
+            label = "LAYER_RU";
+        };
+
         layer_en_mac: layer_en_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -216,6 +204,18 @@
             #binding-cells = <0>;
             bindings = <&to 3 &to_ru_mac>;
             label = "LAYER_RU_MAC";
+        };
+
+        en: en {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 10>,
+                <&to_ru>,
+                <&macro_wait_time 10>;
+
+            label = "EN";
         };
 
         en_mac: en_mac {
@@ -279,7 +279,7 @@
 
         en_mac {
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R         &kp T                                    &kp Y        &kp U             &kp I         &kp O        &kp P
+  &nums N1 Q   &nums N2 W   &nums N3 E    &nums N4 R     &nums N5 T                               &nums N6 Y   &nums N7 U        &nums N8 I    &nums N9 O   &nums N0 P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                    &kp H        &hmr RCTRL J      &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V         &kp B                                    &kp N        &kp M             &none         &none        &kp SQT
                                           &mt LGUI DEL  &mt LSHFT ESC  &lt 4 TAB    &lt 8 ENTER  &lt 9 SPACE  &lt 10 BACKSPACE
@@ -288,7 +288,7 @@
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                            &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
+  &nums N1 RU_CYRILLIC_SHORT_I   &nums N2 RU_CYRILLIC_TSE         &nums N3 RU_CYRILLIC_U          &nums N4 RU_CYRILLIC_KA        &nums N5 RU_CYRILLIC_IE                            &nums N6 RU_CYRILLIC_EN  &nums N7 RU_CYRILLIC_GHE        &nums N8 RU_CYRILLIC_SHA        &nums N9 RU_CYRILLIC_SHCHA     &nums N0 RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                             &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
                                                                                    &mt LCTRL DEL             &mt LSHFT ESC       &lt 5 TAB    &lt 7 ENTER  &lt 9 SPACE         &lt 10 BACKSPACE
