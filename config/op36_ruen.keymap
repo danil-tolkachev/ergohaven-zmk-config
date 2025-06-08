@@ -279,7 +279,7 @@
 
         en_mac {
             bindings = <
-  &nums N1 Q   &nums N2 W   &nums N3 E    &nums N4 R     &nums N5 T                               &nums N6 Y   &nums N7 U        &nums N8 I    &nums N9 O   &nums N0 P
+  &nums N1 Q   &nums N2 W   &nums N3 E    &nums N4 R    &nums N5 T                               &nums N6 Y   &nums N7 U        &nums N8 I    &nums N9 O   &nums N0 P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                    &kp H        &hmr RCTRL J      &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V         &kp B                                    &kp N        &kp M             &none         &none        &kp SQT
                                           &mt LGUI DEL  &mt LSHFT ESC  &lt 4 TAB    &lt 8 ENTER  &lt 9 SPACE  &lt 10 BACKSPACE
@@ -288,19 +288,19 @@
 
         ru {
             bindings = <
-  &nums N1 RU_CYRILLIC_SHORT_I   &nums N2 RU_CYRILLIC_TSE         &nums N3 RU_CYRILLIC_U          &nums N4 RU_CYRILLIC_KA        &nums N5 RU_CYRILLIC_IE                            &nums N6 RU_CYRILLIC_EN  &nums N7 RU_CYRILLIC_GHE        &nums N8 RU_CYRILLIC_SHA        &nums N9 RU_CYRILLIC_SHCHA     &nums N0 RU_CYRILLIC_ZE
-  &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                             &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &mt LCTRL DEL             &mt LSHFT ESC       &lt 5 TAB    &lt 7 ENTER  &lt 9 SPACE         &lt 10 BACKSPACE
+  &nums N1 RU_CYRILLIC_SHORT_I  &nums N2 RU_CYRILLIC_TSE    &nums N3 RU_CYRILLIC_U     &nums N4 RU_CYRILLIC_KA   &nums N5 RU_CYRILLIC_IE                            &nums N6 RU_CYRILLIC_EN  &nums N7 RU_CYRILLIC_GHE   &nums N8 RU_CYRILLIC_SHA   &nums N9 RU_CYRILLIC_SHCHA  &nums N0 RU_CYRILLIC_ZE
+  &hml LGUI RU_CYRILLIC_EF      &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                 &kp RU_CYRILLIC_ER       &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE    &hmr LGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                  &kp RU_CYRILLIC_TE       &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU          &kp RU_CYRILLIC_E
+                                                                                       &mt LCTRL DEL             &mt LSHFT ESC            &lt 5 TAB    &lt 7 ENTER  &lt 9 SPACE              &lt 10 BACKSPACE
             >;
         };
 
         ru_mac {
             bindings = <
-  &nums N1 RU_CYRILLIC_SHORT_I   &nums N2 RU_CYRILLIC_TSE         &nums N3 RU_CYRILLIC_U          &nums N4 RU_CYRILLIC_KA        &nums N5 RU_CYRILLIC_IE                            &nums N6 RU_CYRILLIC_EN  &nums N7 RU_CYRILLIC_GHE        &nums N8 RU_CYRILLIC_SHA        &nums N9 RU_CYRILLIC_SHCHA     &nums N0 RU_CYRILLIC_ZE
-  &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                            &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                             &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &mt LGUI DEL              &mt LSHFT ESC       &lt 6 TAB    &lt 8 ENTER  &lt 9 SPACE         &lt 10 BACKSPACE
+  &nums N1 RU_CYRILLIC_SHORT_I  &nums N2 RU_CYRILLIC_TSE    &nums N3 RU_CYRILLIC_U     &nums N4 RU_CYRILLIC_KA   &nums N5 RU_CYRILLIC_IE                            &nums N6 RU_CYRILLIC_EN  &nums N7 RU_CYRILLIC_GHE   &nums N8 RU_CYRILLIC_SHA   &nums N9 RU_CYRILLIC_SHCHA  &nums N0 RU_CYRILLIC_ZE
+  &hml LGUI RU_CYRILLIC_EF      &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                 &kp RU_CYRILLIC_ER       &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE    &hmr LGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                  &kp RU_CYRILLIC_TE       &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU          &kp RU_CYRILLIC_E
+                                                                                       &mt LGUI DEL              &mt LSHFT ESC            &lt 6 TAB    &lt 8 ENTER  &lt 9 SPACE              &lt 10 BACKSPACE
             >;
         };
 
@@ -342,7 +342,7 @@
 
         nav_mac {
             bindings = <
-  &kp LG(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                                    &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp INS
+  &kp LC(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                                    &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp INS
   &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL     &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LA(BACKSPACE)
   &kp LG(Z)      &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LC(B)                                    &kp LA(LEFT)  &none      &none      &kp LA(RIGHT)  &kp LG(FSLH)
                                           &mt LGUI DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none
