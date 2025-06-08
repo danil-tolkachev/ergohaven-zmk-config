@@ -38,9 +38,9 @@
             hold-trigger-on-release;
         };
 
-        nums: nums {
+        nm: nm {
             compatible = "zmk,behavior-hold-tap";
-            label = "NUMS";
+            label = "NM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -270,7 +270,7 @@
 
         en {
             bindings = <
-  &nums N1 Q   &nums N2 W   &nums N3 E    &nums N4 R     &nums N5 T                               &nums N6 Y   &nums N7 U        &nums N8 I    &nums N9 O   &nums N0 P
+  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                 &nm N6 Y     &nm N7 U          &nm N8 I      &nm N9 O     &nm N0 P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                    &kp H        &hmr RCTRL J      &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                                    &kp N        &kp M             &none         &none        &kp SQT
                                           &mt LCTRL DEL  &mt LSHFT ESC  &lt 4 TAB    &lt 7 ENTER  &lt 9 SPACE  &lt 10 BACKSPACE
@@ -279,7 +279,7 @@
 
         en_mac {
             bindings = <
-  &nums N1 Q   &nums N2 W   &nums N3 E    &nums N4 R    &nums N5 T                               &nums N6 Y   &nums N7 U        &nums N8 I    &nums N9 O   &nums N0 P
+  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                 &nm N6 Y     &nm N7 U          &nm N8 I      &nm N9 O     &nm N0 P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                    &kp H        &hmr RCTRL J      &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V         &kp B                                    &kp N        &kp M             &none         &none        &kp SQT
                                           &mt LGUI DEL  &mt LSHFT ESC  &lt 4 TAB    &lt 8 ENTER  &lt 9 SPACE  &lt 10 BACKSPACE
@@ -288,28 +288,28 @@
 
         ru {
             bindings = <
-  &nums N1 RU_CYRILLIC_SHORT_I  &nums N2 RU_CYRILLIC_TSE    &nums N3 RU_CYRILLIC_U     &nums N4 RU_CYRILLIC_KA   &nums N5 RU_CYRILLIC_IE                            &nums N6 RU_CYRILLIC_EN  &nums N7 RU_CYRILLIC_GHE   &nums N8 RU_CYRILLIC_SHA   &nums N9 RU_CYRILLIC_SHCHA  &nums N0 RU_CYRILLIC_ZE
-  &hml LGUI RU_CYRILLIC_EF      &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                 &kp RU_CYRILLIC_ER       &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE    &hmr LGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                  &kp RU_CYRILLIC_TE       &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU          &kp RU_CYRILLIC_E
-                                                                                       &mt LCTRL DEL             &mt LSHFT ESC            &lt 5 TAB    &lt 7 ENTER  &lt 9 SPACE              &lt 10 BACKSPACE
+  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                            &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE
+  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                               &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
+                                                                                     &mt LCTRL DEL             &mt LSHFT ESC          &lt 5 TAB    &lt 7 ENTER  &lt 9 SPACE            &lt 10 BACKSPACE
             >;
         };
 
         ru_mac {
             bindings = <
-  &nums N1 RU_CYRILLIC_SHORT_I  &nums N2 RU_CYRILLIC_TSE    &nums N3 RU_CYRILLIC_U     &nums N4 RU_CYRILLIC_KA   &nums N5 RU_CYRILLIC_IE                            &nums N6 RU_CYRILLIC_EN  &nums N7 RU_CYRILLIC_GHE   &nums N8 RU_CYRILLIC_SHA   &nums N9 RU_CYRILLIC_SHCHA  &nums N0 RU_CYRILLIC_ZE
-  &hml LGUI RU_CYRILLIC_EF      &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                 &kp RU_CYRILLIC_ER       &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE    &hmr LGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                  &kp RU_CYRILLIC_TE       &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU          &kp RU_CYRILLIC_E
-                                                                                       &mt LGUI DEL              &mt LSHFT ESC            &lt 6 TAB    &lt 8 ENTER  &lt 9 SPACE              &lt 10 BACKSPACE
+  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                            &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE
+  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                               &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
+                                                                                     &mt LGUI DEL              &mt LSHFT ESC          &lt 6 TAB    &lt 8 ENTER  &lt 9 SPACE            &lt 10 BACKSPACE
             >;
         };
 
         sym_en {
             bindings = <
-  &nums N1 TILDE  &nums N2 AT_SIGN  &nums N3 HASH  &nums N4 DLLR   &nums N5 PRCNT                         &nums N6 LBRC      &nums N7 LBKT   &nums N8 RBKT  &nums N9 RBRC   &nums N0GRAVE
-  &kp PLUS   &kp MINUS    &kp DOT   &kp COMMA  &kp EQUAL                         &kp EXCL      &kp LPAR   &kp RPAR  &kp COLON  &kp SEMI
-  &kp FSLH   &kp STAR     &kp PIPE  &kp AMPS   &kp BSLH                          &kp QMARK     &kp CARET  &kp LT    &kp GT     &kp DQT
-                                    &kp DEL    &mo 10     &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
+  &nm N1 TILDE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                         &nm N6 LBRC   &nm N7 LBKT  &nm N8 RBKT  &nm N9 RBRC  &nm N0 GRAVE
+  &kp PLUS      &kp MINUS       &kp DOT      &kp COMMA    &kp EQUAL                            &kp EXCL      &kp LPAR     &kp RPAR     &kp COLON    &kp SEMI
+  &kp FSLH      &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                             &kp QMARK     &kp CARET    &kp LT       &kp GT       &kp DQT
+                                             &kp DEL      &mo 10        &none    &lt 11 ENTER  &lt 10 SPACE  &kp UNDER
             >;
         };
 
