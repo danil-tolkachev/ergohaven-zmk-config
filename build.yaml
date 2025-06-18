@@ -14,29 +14,61 @@
 ---
 include:
   - board: ergohaven
+    shield: velvet_v3_dongle prospector_adapter
+    snippet: zmk-usb-logging
+    # snippet: studio-rpc-usb-uart
+    # cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: velvet_v3_dongle-ergohaven-zmk
+  - board: ergohaven
+    shield: velvet_v3_ruen velvet_v3_dongle prospector_adapter
+    snippet: zmk-usb-logging
+    # snippet: studio-rpc-usb-uart
+    # cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: velvet_v3_dongle_ruen-ergohaven-zmk
+  - board: ergohaven
+    shield: velvet_v3_left_dongle
+    snippet: zmk-usb-logging
+  - board: ergohaven
     shield: velvet_v3_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    snippet: zmk-usb-logging
+    # snippet: studio-rpc-usb-uart
+    # cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: ergohaven
     shield: velvet_v3_ruen velvet_v3_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    snippet: zmk-usb-logging
+    # snippet: studio-rpc-usb-uart
+    # cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: velvet_v3_left_ruen-ergohaven-zmk
   - board: ergohaven
     shield: velvet_v3_right
+    snippet: zmk-usb-logging
 
   - board: ergohaven
     shield: velvet_v3_ui_left
+    snippet: zmk-usb-logging
   - board: ergohaven
     shield: velvet_v3_ui_ruen velvet_v3_ui_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: velvet_v3_ui_right_ruen-ergohaven-zmk
   - board: ergohaven
+    snippet: zmk-usb-logging
     shield: velvet_v3_ui_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
 
+  - board: ergohaven
+    shield: op36_dongle prospector_adapter
+    snippet: zmk-usb-logging
+    # snippet: studio-rpc-usb-uart
+    # cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: op36_dongle-ergohaven-zmk
+  - board: ergohaven
+    shield: op36_ruen op36_dongle prospector_adapter
+    snippet: zmk-usb-logging
+    # snippet: studio-rpc-usb-uart
+    # cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: op36_dongle_ruen-ergohaven-zmk
+  - board: ergohaven
+    shield: op36_left_dongle
   - board: ergohaven
     shield: op36_left
     snippet: studio-rpc-usb-uart
