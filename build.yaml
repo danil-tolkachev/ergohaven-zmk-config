@@ -62,7 +62,7 @@ include:
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: op36_dongle-ergohaven-zmk
   - board: ergohaven
-    shield: prospector_adapter op36_ruen op36_dongle
+    shield: prospector_adapter op36_dongle op36_ruen
     snippet: zmk-usb-logging
     # snippet: studio-rpc-usb-uart
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
