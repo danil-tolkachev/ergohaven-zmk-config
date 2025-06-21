@@ -62,97 +62,97 @@
 
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             layers = <2 3>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             layers = <2 3>;
         };
 
         yo {
             bindings = <&kp RU_CYRILLIC_IO>;
-            key-positions = <4 3>;
+            key-positions = <4 5>;
             layers = <2>;
         };
 
         yo_mac {
             bindings = <&kp NUBS>;
-            key-positions = <4 3>;
+            key-positions = <4 5>;
             layers = <3>;
         };
 
         en {
             bindings = <&layer_en>;
-            key-positions = <2 1>;
+            key-positions = <2 3>;
             layers = <2>;
         };
 
         en_none {
             bindings = <&none>;
-            key-positions = <2 1>;
+            key-positions = <2 3>;
             layers = <0 1>;
         };
 
         en_mac {
             bindings = <&layer_en_mac>;
-            key-positions = <2 1>;
+            key-positions = <2 3>;
             layers = <3>;
         };
 
         ru {
             bindings = <&layer_ru>;
-            key-positions = <3 2>;
+            key-positions = <3 4>;
             layers = <0>;
         };
 
         ru_none {
             bindings = <&none>;
-            key-positions = <3 2>;
+            key-positions = <3 4>;
             layers = <3 2>;
         };
 
         ru_mac {
             bindings = <&layer_ru_mac>;
-            key-positions = <3 2>;
+            key-positions = <3 4>;
             layers = <1>;
         };
 
         en_nums {
             bindings = <&layer_combo 4 10>;
-            key-positions = <32 31>;
+            key-positions = <40 39>;
             layers = <0 1>;
         };
 
         ru_nums {
             bindings = <&layer_combo 5 10>;
-            key-positions = <32 31>;
+            key-positions = <39 40>;
             layers = <2>;
         };
 
         ru_mac_nums {
             bindings = <&layer_combo 6 10>;
-            key-positions = <32 31>;
+            key-positions = <39 40>;
             layers = <3>;
         };
 
         underscore {
             bindings = <&kp UNDER>;
-            key-positions = <26 27>;
+            key-positions = <31 32>;
             layers = <0 1 2 3 4 5 6 10>;
         };
 
         tmux_hor {
             bindings = <&tmux PRCNT>;
-            key-positions = <23 24>;
+            key-positions = <29 28>;
             layers = <7 8>;
         };
 
         tmux_ver {
             bindings = <&tmux DQT>;
-            key-positions = <24 14>;
+            key-positions = <29 17>;
             layers = <7 8>;
         };
     };
