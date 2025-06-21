@@ -127,38 +127,46 @@
         };
 
         sym_en {
+            display-name = "sym en";
+
             bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &kp DLLR &none
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL &none
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                     &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK &none
-                                                    &trans           &mo 5      &trans    &trans  &none      &trans &none &none
+  &none &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                         &nm N6 LBRC   &nm N7 LBKT    &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT &none
+  &none &kp PLUS      &kp MINUS       &kp DOT      &kp COMMA    &kp EQUAL                            &kp EXCL      &kp LPAR       &kp RPAR     &kp COLON    &kp SEMI &none
+  &none &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                             &kp QMARK     &kp CARET      &kp LT       &kp GT       &kp FSLH &none
+                                             &none &none &kp DEL      &mo 10        &none    &lt 11 ENTER  &lt 10 SPACE  &kp BACKSPACE &none &none
             >;
         };
 
         sym_ru {
+            display-name = "sym ru";
+
             bindings = <
-  &none &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                    &en CARET  &en LBKT  &kp UNDER           &en RBKT    &en DLLR &none
-  &none &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC    &hmr RGUI EXCL &none
-  &none &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                     &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK &none
-                                                            &none &none &trans           &mo 5      &trans    &trans  &none      &trans &none &none
+  &none &en GRAVE  &en AT_SIGN  &en HASH    &en DLLR      &kp PRCNT                                &en LBRC      &en LBKT       &en RBKT  &en RBRC      &kp RU_DQT &none
+  &none &kp PLUS   &kp MINUS    &kp RU_DOT  &kp RU_COMMA  &kp EQUAL                                &kp EXCL      &kp LPAR       &kp RPAR  &kp RU_COLON  &kp RU_SEMI &none
+  &none &en TILDE  &kp STAR     &en PIPE    &en AMPS      &kp RU_BACKSLASH                         &kp RU_QMARK  &en CARET      &en LT    &en GT        &kp RU_FSLH &none
+                                      &none &none &kp DEL       &mo 10            &none    &lt 11 ENTER  &lt 10 SPACE  &kp BACKSPACE &none &none
             >;
         };
 
         nav {
+            display-name = "nav";
+
             bindings = <
-  &none &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0 &none
-  &none &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT &none
-  &none &layer_en      &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &layer_ru &none
-        &none &none                               &trans     &none       &trans    &trans  &mo 5            &trans &none &none
+  &none &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                                    &kp HOME      &kp PG_DN  &kp PG_UP  &kp END        &kp INS &none
+  &none &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LC(BACKSPACE) &none
+  &none &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                                    &kp LC(LEFT)  &none      &none      &kp LC(RIGHT)  &kp LC(FSLH) &none
+                                          &none &none &mt LCTRL DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none &none &none
             >;
         };
 
         adj {
+            display-name = "adj";
+
             bindings = <
- &none  &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_CLR &none
-  &none &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr RCTRL C_VOL_DN  &hmr RSHFT C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI &none
-  &none &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_PREV           &kp C_PP           &kp C_NEXT          &studio_unlock &none
-                                            &none &none &trans         &trans   &trans    &trans  &trans        &trans &none &none
+  &none  &bt_pc      &bt_mac       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &kp C_BRI_DN  &kp C_BRI_UP  &none       &kp PRINTSCREEN &none
+  &none  &bt BT_CLR  &out OUT_BLE  &out OUT_USB  &none         &none                         &none  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp LA(PRINTSCREEN) &none
+  &none  &none       &none         &none         &none         &none                         &none  &kp C_PREV    &kp C_NEXT    &kp C_PP    &kp LS(PRINTSCREEN) &none
+                                         &none  &none   &none         &none         &none    &none  &none  &none &none &none
             >;
         };
 
