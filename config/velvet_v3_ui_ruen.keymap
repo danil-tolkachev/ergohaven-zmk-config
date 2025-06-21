@@ -341,19 +341,19 @@
 
         nav {
             bindings = <
-&none  &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                                    &kp HOME      &kp PG_DN  &kp PG_UP  &kp END        &kp INS            &none
-&none  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LC(BACKSPACE)  &none
-&none  &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                                    &kp LC(LEFT)  &none      &none      &kp LC(RIGHT)  &kp LC(FSLH)       &none
-                      &none      &none         &mt LCTRL DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none      &none      &none
+&none  &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                                    &kp HOME      &kp PG_DN  &kp PG_UP    &kp END        &kp INS            &none
+&none  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP       &kp RIGHT      &kp LC(BACKSPACE)  &none
+&none  &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                                    &kp LC(LEFT)  &kp TAB    &kp LS(TAB)  &kp LC(RIGHT)  &kp LC(FSLH)       &none
+                      &none      &none         &mt LCTRL DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none      &none        &none
             >;
         };
 
         nav_mac {
             bindings = <
-&none  &kp LC(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                                    &kp LG(LEFT)  &kp PG_DN  &kp PG_UP  &kp LG(RIGHT)  &kp INS            &none
-&none  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL     &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LA(BACKSPACE)  &none
-&none  &kp LG(Z)      &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LC(B)                                    &kp LA(LEFT)  &none      &none      &kp LA(RIGHT)  &kp LG(FSLH)       &none
-                      &none      &none         &mt LGUI DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none      &none      &none
+&none  &kp LC(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                                    &kp LG(LEFT)  &kp PG_DN  &kp PG_UP    &kp LG(RIGHT)  &kp INS            &none
+&none  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL     &kp PRCNT                                    &kp LEFT      &kp DOWN   &kp UP       &kp RIGHT      &kp LA(BACKSPACE)  &none
+&none  &kp LG(Z)      &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LC(B)                                    &kp LA(LEFT)  &kp TAB    &kp LS(TAB)  &kp LA(RIGHT)  &kp LG(FSLH)       &none
+                      &none      &none         &mt LGUI DEL  &mt LSHFT ESCAPE  &lt 11 BACKSPACE    &none  &none         &none      &none        &none
             >;
         };
 
@@ -386,10 +386,28 @@
 
         mouse {
             bindings = <
-&none     &none     &none     &none  &none           &msc SCRL_LEFT                  &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT  &none  &none  &none
-&mkp MB3  &mkp MB2  &mkp MB1  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN                  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none            &none  &none  &none
-&none     &none     &none     &none  &none           &none                           &none           &none            &none            &none  &none  &none
-                    &none     &none  &none           &none           &none    &none  &none
+&none  &none   &none     &none     &none     &none                   &none   &none     &none     &none     &none   &none
+&none  &mo 13  &mkp MB3  &mkp MB2  &mkp MB1  &mo 14                  &mo 14  &mkp MB1  &mkp MB2  &mkp MB3  &mo 13  &none
+&none  &none   &none     &none     &none     &none                   &none   &none     &none     &none     &none   &none
+               &none     &none     &none     &none   &none    &none  &none
+            >;
+        };
+
+        scroller {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        sniper {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
