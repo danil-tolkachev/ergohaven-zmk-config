@@ -278,19 +278,19 @@
 
         en {
             bindings = <
-&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R             &nm N5 T                                 &nm N6 Y     &nm N7 U         &nm N8 I      &nm N9 O     &nm N0 P             &none
-&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F         &kp G                                    &kp H        &hmr RCTRL J     &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V                &kp B                                    &kp N        &kp M            &none         &none        &kp SQT              &none
-                    &none        &none         &mt LCTRL BACKSPACE  &mt LSHFT ESC  &lt 4 TAB    &lt 7 ENTER  &lt 9 SPACE  &cap_sen 12 MB1  &none         &none
+&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                       &nm N6 Y     &nm N7 U         &nm N8 I      &nm N9 O     &nm N0 P             &none
+&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                          &kp H        &hmr RCTRL J     &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V          &kp B                                          &kp N        &kp M            &none         &none        &kp SQT              &none
+                    &none        &none         &mt LCTRL ESC  &mt LSHFT BACKSPACE  &lt 4 TAB    &lt 7 ENTER  &lt 9 SPACE  &cap_sen 12 MB1  &none         &none
             >;
         };
 
         en_mac {
             bindings = <
-&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R            &nm N5 T                                 &nm N6 Y     &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
-&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F        &kp G                                    &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V               &kp B                                    &kp N        &kp M         &none         &none        &kp SQT              &none
-                    &none        &none         &mt LGUI BACKSPACE  &mt LSHFT ESC  &lt 4 TAB    &lt 8 ENTER  &lt 9 SPACE  &trans        &none         &none
+&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                       &nm N6 Y     &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
+&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V         &kp B                                          &kp N        &kp M         &none         &none        &kp SQT              &none
+                    &none        &none         &mt LGUI ESC  &mt LSHFT BACKSPACE  &lt 4 TAB    &lt 8 ENTER  &lt 9 SPACE  &trans        &none         &none
             >;
         };
 
@@ -299,7 +299,7 @@
 &none  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                            &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE      &none
 &none  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                               &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE  &none
 &none  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
-                                   &none                       &none                      &mt LCTRL BACKSPACE       &mt LSHFT ESC          &lt 5 TAB    &lt 7 ENTER  &lt 9 SPACE            &trans                     &none                      &none
+                                   &none                       &none                      &mt LCTRL ESC             &mt LSHFT BACKSPACE    &lt 5 TAB    &lt 7 ENTER  &lt 9 SPACE            &trans                     &none                      &none
             >;
         };
 
@@ -308,7 +308,7 @@
 &none  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                            &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE      &none
 &none  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                               &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE  &none
 &none  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
-                                   &none                       &none                      &mt LGUI BACKSPACE        &mt LSHFT ESC          &lt 6 TAB    &lt 8 ENTER  &lt 9 SPACE            &trans                     &none                      &none
+                                   &none                       &none                      &mt LGUI ESC              &mt LSHFT BACKSPACE    &lt 6 TAB    &lt 8 ENTER  &lt 9 SPACE            &trans                     &none                      &none
             >;
         };
 
