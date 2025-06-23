@@ -413,10 +413,10 @@
     };
 };
 
-&trackball { cpi = <1000>; };
+&trackball { cpi = <900>; };
 
 &trackball_listener {
-    input-processors = <&zip_xy_scaler 9 20>;
+    input-processors = <&zip_xy_scaler 1 1>;
 
     scroller {
         layers = <13>;
