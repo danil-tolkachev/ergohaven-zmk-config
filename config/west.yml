@@ -19,7 +19,7 @@ manifest:
       remote: me
       revision: dongle
     - name: zmk-pmw3610-driver
-      remote: badjeff
+      remote: me
       revision: main
     - name: prospector-zmk-module
       remote: carrefinho
