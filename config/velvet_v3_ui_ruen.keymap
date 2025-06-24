@@ -416,7 +416,7 @@
 &trackball { cpi = <900>; };
 
 &trackball_listener {
-    input-processors = <&zip_xy_scaler 1 1>;
+    // input-processors = <&zip_xy_scaler 1 1>;
 
     scroller {
         layers = <13>;
