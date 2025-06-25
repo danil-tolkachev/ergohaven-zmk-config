@@ -8,6 +8,12 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <150>;
+};
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -44,6 +50,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
+            quick-tap-ms = <150>;
         };
 
         cap_sen: cap_sen {
@@ -88,36 +95,48 @@
             bindings = <&layer_en>;
             key-positions = <2 3>;
             layers = <2>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         en_none {
             bindings = <&none>;
             key-positions = <2 3>;
             layers = <0 1>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <50>;
         };
 
         en_mac {
             bindings = <&layer_en_mac>;
             key-positions = <2 3>;
             layers = <3>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <50>;
         };
 
         ru {
             bindings = <&layer_ru>;
             key-positions = <3 4>;
             layers = <0>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <50>;
         };
 
         ru_none {
             bindings = <&none>;
             key-positions = <3 4>;
             layers = <3 2>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <50>;
         };
 
         ru_mac {
             bindings = <&layer_ru_mac>;
             key-positions = <3 4>;
             layers = <1>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <50>;
         };
 
         en_nums {
