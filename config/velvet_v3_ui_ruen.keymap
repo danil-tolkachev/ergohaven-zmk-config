@@ -101,48 +101,42 @@
             bindings = <&layer_en>;
             key-positions = <2 3>;
             layers = <2>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <150>;
+            timeout-ms = <40>;
         };
 
         en_none {
             bindings = <&none>;
             key-positions = <2 3>;
             layers = <0 1>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <40>;
         };
 
         en_mac {
             bindings = <&layer_en_mac>;
             key-positions = <2 3>;
             layers = <3>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <40>;
         };
 
         ru {
             bindings = <&layer_ru>;
             key-positions = <3 4>;
             layers = <0>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <40>;
         };
 
         ru_none {
             bindings = <&none>;
             key-positions = <3 4>;
             layers = <3 2>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <40>;
         };
 
         ru_mac {
             bindings = <&layer_ru_mac>;
             key-positions = <3 4>;
             layers = <1>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <40>;
         };
 
         en_nums {
