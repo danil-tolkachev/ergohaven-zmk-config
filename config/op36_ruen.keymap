@@ -358,7 +358,7 @@
             display-name = "nav";
             bindings = <
   &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                                 &kp HOME      &kp PG_DN      &kp PG_UP  &kp END        &kp INS
-  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                                 &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
+  &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL      &none                                     &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
   &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                                 &kp LC(LEFT)  &kp BACKSPACE  &kp DEL    &kp LC(RIGHT)  &kp LC(FSLH)
                                           &mt LCTRL ESC  &mt LSHFT BACKSPACE  &lt 12 TAB    &none  &none         &none
             >;
@@ -368,7 +368,7 @@
             display-name = "nav mac";
             bindings = <
   &kp LC(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                                 &kp LG(LEFT)  &kp PG_DN      &kp PG_UP  &kp LG(RIGHT)  &kp INS
-  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL     &kp PRCNT                                 &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LA(BACKSPACE)
+  &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL     &none                                     &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LA(BACKSPACE)
   &kp LG(Z)      &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LC(B)                                 &kp LA(LEFT)  &kp BACKSPACE  &kp DEL    &kp LA(RIGHT)  &kp LG(FSLH)
                                           &mt LGUI ESC  &mt LSHFT BACKSPACE  &lt 12 TAB    &none  &none         &none
             >;
