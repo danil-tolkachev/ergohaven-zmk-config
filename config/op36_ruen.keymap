@@ -317,10 +317,10 @@
         sym_en {
             display-name = "Sym En";
             bindings = <
-  &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                        &nm N6 LBRC   &nm N7 LBKT    &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT
-  &kp PLUS      &kp MINUS       &kp DOT      &kp COMMA    &kp EQUAL                           &kp EXCL      &kp LPAR       &kp RPAR     &kp COLON    &kp SEMI
-  &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                            &kp QMARK     &kp CARET      &kp LT       &kp GT       &kp FSLH
-                                             &none        &mo 11        &none    &lt 8 ENTER  &lt 11 SPACE  &kp BACKSPACE
+  &nm N1 GRAVE    &nm N2 AT_SIGN   &nm N3 HASH      &nm N4 DLLR       &nm N5 PRCNT                        &nm N6 LBRC   &nm N7 LBKT      &nm N8 RBKT       &nm N9 RBRC      &nm N0 DQT
+  &hml LGUI PLUS  &hml LALT MINUS  &hml LSHIFT DOT  &hml LCTRL COMMA  &kp EQUAL                           &kp EXCL      &hmr RCTRL LPAR  &hmr RSHIFT RPAR  &hmr RALT COLON  &hmr RGUI SEMI
+  &kp TILDE       &kp STAR         &kp PIPE         &kp AMPS          &kp BSLH                            &kp QMARK     &kp CARET        &kp LT            &kp GT           &kp FSLH
+                                                    &none             &mo 11        &none    &lt 8 ENTER  &lt 11 SPACE  &kp BACKSPACE
             >;
         };
 
