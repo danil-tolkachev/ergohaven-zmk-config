@@ -319,7 +319,7 @@
 &none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                       &nm N6 Y     &nm N7 U         &nm N8 I      &nm N9 O     &nm N0 P             &none
 &none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                          &kp H        &hmr RCTRL J     &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
 &none  &kp Z        &kp X        &kp C         &kp V          &kp B                                          &kp N        &kp M            &kp COMMA     &kp DOT      &kp SQT              &none
-                    &none        &none         &mt LCTRL ESC  &mt LSHFT BACKSPACE  &lt 4 TAB    &lt 7 ENTER  &lt 9 SPACE  &cap_sen 12 MB1  &none         &none
+                    &none        &none         &mt LCTRL ESC  &mt LSHFT BACKSPACE  &lt 4 TAB    &lt 7 ENTER  &lt 9 SPACE  &cap_sen 12 MB1  &mkp MB1      &mkp MB2
             >;
         };
 
@@ -379,7 +379,7 @@
 &none  &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                         &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT  &none
 &none  &kp PLUS       &kp MINUS        &kp LS(N7)    &kp LS(N6)    &kp EQUAL                             &kp EXCL      &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)  &none
 &none  &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                          &kp QMARK     &en_mac CARET  &en_mac LT  &en_mac GT    &kp FSLH    &none
-                      &none            &none         &kp DEL       &mo 10         &none    &lt 11 ENTER  &lt 10 SPACE  &trans         &mkp MB1    &mkp MB2
+                      &none            &none         &kp DEL       &mo 10         &none    &lt 11 ENTER  &lt 10 SPACE  &trans         &none       &none
             >;
         };
 
