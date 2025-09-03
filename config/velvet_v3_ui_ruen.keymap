@@ -352,8 +352,8 @@
             display-name = "Symbols";
             bindings = <
 &none  &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                         &nm N6 LBRC   &nm N7 LBKT  &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT  &none
-&none  &kp PLUS      &kp MINUS       &kp DOT      &kp COMMA    &kp EQUAL                            &kp EXCL      &kp LPAR     &kp RPAR     &kp COLON    &kp SEMI    &none
-&none  &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                             &kp QMARK     &kp CARET    &kp LT       &kp GT       &kp FSLH    &none
+&none  &kp PLUS      &kp MINUS       &kp LT       &kp GT       &kp EQUAL                            &kp EXCL      &kp LPAR     &kp RPAR     &kp COLON    &kp SEMI    &none
+&none  &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                             &kp QMARK     &kp CARET    &kp COMMA    &kp DOT      &kp FSLH    &none
                      &none           &none        &none        &mo 10        &none    &lt 11 ENTER  &lt 10 SPACE  &trans       &none        &none
             >;
         };
@@ -361,10 +361,10 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&none  &en GRAVE  &en AT_SIGN  &en HASH    &en DLLR      &kp PRCNT                                &en LBRC      &en LBKT   &en RBKT  &en RBRC      &kp RU_DQT   &none
-&none  &kp PLUS   &kp MINUS    &kp RU_DOT  &kp RU_COMMA  &kp EQUAL                                &kp EXCL      &kp LPAR   &kp RPAR  &kp RU_COLON  &kp RU_SEMI  &none
-&none  &en TILDE  &kp STAR     &en PIPE    &en AMPS      &kp RU_BACKSLASH                         &kp RU_QMARK  &en CARET  &en LT    &en GT        &kp RU_FSLH  &none
-                  &none        &none       &none         &mo 10            &none    &lt 11 ENTER  &lt 10 SPACE  &trans     &none     &none
+&none  &en GRAVE  &en AT_SIGN  &en HASH  &en DLLR  &kp PRCNT                                &en LBRC      &en LBKT   &en RBKT      &en RBRC      &kp RU_DQT   &none
+&none  &kp PLUS   &kp MINUS    &en LT    &en GT    &kp EQUAL                                &kp EXCL      &kp LPAR   &kp RPAR      &kp RU_COLON  &kp RU_SEMI  &none
+&none  &en TILDE  &kp STAR     &en PIPE  &en AMPS  &kp RU_BACKSLASH                         &kp RU_QMARK  &en CARET  &kp RU_COMMA  &kp RU_DOT    &kp RU_FSLH  &none
+                  &none        &none     &none     &mo 10            &none    &lt 11 ENTER  &lt 10 SPACE  &trans     &none         &none
             >;
         };
 
