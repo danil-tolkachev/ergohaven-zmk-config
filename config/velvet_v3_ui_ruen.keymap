@@ -316,10 +316,10 @@
         en {
             display-name = "Base";
             bindings = <
-&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                       &nm N6 Y     &nm N7 U         &nm N8 I      &nm N9 O     &nm N0 P             &none
-&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                          &kp H        &hmr RCTRL J     &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V          &kp B                                          &kp N        &kp M            &kp COMMA     &kp DOT      &kp SQT              &none
-                    &none        &none         &mt LCTRL ESC  &mt LSHFT BACKSPACE  &lt 4 TAB    &lt 7 ENTER  &lt 9 SPACE  &cap_sen 12 MB1  &mkp MB1      &mkp MB2
+&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                       &nm N6 Y     &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
+&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                          &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V          &kp B                                          &kp N        &kp M         &kp COMMA     &kp DOT      &kp SQT              &none
+                    &none        &none         &mt LCTRL ESC  &mt LSHFT BACKSPACE  &lt 4 TAB    &lt 7 ENTER  &lt 9 SPACE  &mo 12        &mkp MB1      &mkp MB2
             >;
         };
 
