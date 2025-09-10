@@ -173,11 +173,6 @@
             bindings = <&mo 13>;
             key-positions = <44 45>;
         };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
-        };
     };
 
     macros {
@@ -321,70 +316,70 @@
         en {
             display-name = "Base";
             bindings = <
-&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                    &nm N6 Y         &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
-&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                       &kp H            &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V          &kp B                                       &kp N            &kp M         &kp COMMA     &kp DOT      &kp SQT              &none
-                    &none        &none         &mt LCTRL TAB  &mt LSHFT SPACE  &lt 4 RET    &lt 7 DELETE  &lt 9 BACKSPACE  &mo 12        &mkp MB1      &mkp MB2
+&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                     &nm N6 Y     &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
+&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                        &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V          &kp B                                        &kp N        &kp M         &kp COMMA     &kp DOT      &kp SQT              &none
+                    &none        &none         &mt LCTRL ESC  &mt LSHFT RET  &lt 4 TAB    &lt 7 BACKSPACE  &lt 9 SPACE  &mo 12        &mkp MB1      &mkp MB2
             >;
         };
 
         en_mac {
             display-name = "Base ";
             bindings = <
-&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                 &nm N6 Y         &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
-&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                    &kp H            &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V         &kp B                                    &kp N            &kp M         &kp COMMA     &kp DOT      &kp SQT              &none
-                    &none        &none         &mt LGUI TAB  &mt LSHFT SPACE  &lt 4 RET    &lt 8 DEL  &lt 9 BACKSPACE  &trans        &trans        &trans
+&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                     &nm N6 Y     &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
+&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                        &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V         &kp B                                        &kp N        &kp M         &kp COMMA     &kp DOT      &kp SQT              &none
+                    &none        &none         &mt LGUI ESC  &mt LSHFT RET  &lt 4 TAB    &lt 8 BACKSPACE  &lt 9 SPACE  &trans        &trans        &trans
             >;
         };
 
         ru {
             display-name = "Ru";
             bindings = <
-&none  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                          &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE      &none
-&none  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                             &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE  &none
-&none  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
-                                   &none                       &none                      &mt LCTRL TAB             &mt LSHFT SPACE        &lt 5 RET    &lt 7 DEL  &lt 9 BACKSPACE        &trans                     &trans                     &trans
+&none  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                                &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE      &none
+&none  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE  &none
+&none  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
+                                   &none                       &none                      &mt LCTRL ESC             &mt LSHFT RET          &lt 5 TAB    &lt 7 BACKSPACE  &lt 9 SPACE            &trans                     &trans                     &trans
             >;
         };
 
         ru_mac {
             display-name = "Ru ";
             bindings = <
-&none  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                          &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE      &none
-&none  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                             &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE  &none
-&none  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
-                                   &none                       &none                      &mt LGUI TAB              &mt LSHFT SPACE        &lt 6 RET    &lt 8 DEL  &lt 9 BACKSPACE        &trans                     &trans                     &trans
+&none  &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                                &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE      &none
+&none  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE  &none
+&none  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
+                                   &none                       &none                      &mt LGUI ESC              &mt LSHFT RET          &lt 6 TAB    &lt 8 BACKSPACE  &lt 9 SPACE            &trans                     &trans                     &trans
             >;
         };
 
         sym_en {
             display-name = "Symbols";
             bindings = <
-&none  &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                       &nm N6 LBRC       &nm N7 LBKT  &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT  &none
-&none  &kp PLUS      &kp MINUS       &kp LT       &kp GT       &kp EQUAL                          &kp EXCL          &kp LPAR     &kp RPAR     &kp COLON    &kp SEMI    &none
-&none  &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                           &kp QMARK         &kp CARET    &kp COMMA    &kp DOT      &kp FSLH    &none
-                     &none           &none        &none        &mo 10        &none    &lt 11 DEL  &lt 10 BACKSPACE  &trans       &trans       &trans
+&none  &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                             &nm N6 LBRC   &nm N7 LBKT  &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT  &none
+&none  &kp PLUS      &kp MINUS       &kp LT       &kp GT       &kp EQUAL                                &kp EXCL      &kp LPAR     &kp RPAR     &kp COLON    &kp SEMI    &none
+&none  &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                                 &kp QMARK     &kp CARET    &kp COMMA    &kp DOT      &kp FSLH    &none
+                     &none           &none        &none        &mo 10        &none    &lt 11 BACKSPACE  &lt 10 SPACE  &trans       &trans       &trans
             >;
         };
 
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&none  &en GRAVE  &en AT_SIGN  &en HASH  &en DLLR  &kp PRCNT                              &en LBRC          &en LBKT   &en RBKT      &en RBRC      &kp RU_DQT   &none
-&none  &kp PLUS   &kp MINUS    &en LT    &en GT    &kp EQUAL                              &kp EXCL          &kp LPAR   &kp RPAR      &kp RU_COLON  &kp RU_SEMI  &none
-&none  &en TILDE  &kp STAR     &en PIPE  &en AMPS  &kp RU_BACKSLASH                       &kp RU_QMARK      &en CARET  &kp RU_COMMA  &kp RU_DOT    &kp RU_FSLH  &none
-                  &none        &none     &none     &mo 10            &none    &lt 11 DEL  &lt 10 BACKSPACE  &trans     &trans        &trans
+&none  &en GRAVE  &en AT_SIGN  &en HASH  &en DLLR  &kp PRCNT                                    &en LBRC      &en LBKT   &en RBKT      &en RBRC      &kp RU_DQT   &none
+&none  &kp PLUS   &kp MINUS    &en LT    &en GT    &kp EQUAL                                    &kp EXCL      &kp LPAR   &kp RPAR      &kp RU_COLON  &kp RU_SEMI  &none
+&none  &en TILDE  &kp STAR     &en PIPE  &en AMPS  &kp RU_BACKSLASH                             &kp RU_QMARK  &en CARET  &kp RU_COMMA  &kp RU_DOT    &kp RU_FSLH  &none
+                  &none        &none     &none     &mo 10            &none    &lt 11 BACKSPACE  &lt 10 SPACE  &trans     &trans        &trans
             >;
         };
 
         sym_ru_mac {
             display-name = "Symbols";
             bindings = <
-&none  &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                       &en_mac LBRC      &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT  &none
-&none  &kp PLUS       &kp MINUS        &kp LS(N7)    &kp LS(N6)    &kp EQUAL                           &kp EXCL          &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)  &none
-&none  &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                        &kp QMARK         &en_mac CARET  &en_mac LT  &en_mac GT    &kp FSLH    &none
-                      &none            &none         &none         &mo 10         &none    &lt 11 DEL  &lt 10 BACKSPACE  &trans         &trans      &trans
+&none  &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                             &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT  &none
+&none  &kp PLUS       &kp MINUS        &kp LS(N7)    &kp LS(N6)    &kp EQUAL                                 &kp EXCL      &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)  &none
+&none  &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                              &kp QMARK     &en_mac CARET  &en_mac LT  &en_mac GT    &kp FSLH    &none
+                      &none            &none         &none         &mo 10         &none    &lt 11 BACKSPACE  &lt 10 SPACE  &trans         &trans      &trans
             >;
         };
 
@@ -394,17 +389,17 @@
 &none  &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                             &kp HOME      &kp PG_DN  &kp PG_UP    &kp END        &kp INS            &none
 &none  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL      &kp PRCNT                             &kp LEFT      &kp DOWN   &kp UP       &kp RIGHT      &kp LC(BACKSPACE)  &none
 &none  &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                             &kp LC(LEFT)  &kp TAB    &kp LS(TAB)  &kp LC(RIGHT)  &kp LC(FSLH)       &none
-                      &none      &none         &mt LCTRL TAB  &mt LSHFT SPACE  &lt 11 RET    &none  &none         &none      &none        &none
+                      &none      &none         &mt LCTRL DEL  &mt LSHFT ENTER  &lt 11 TAB    &none  &none         &none      &none        &none
             >;
         };
 
         nav_mac {
             display-name = "Navigation";
             bindings = <
-&none  &kp LC(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                             &kp LG(LEFT)  &kp PG_DN  &kp PG_UP    &kp LG(RIGHT)  &kp INS            &none
-&none  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL     &kp PRCNT                             &kp LEFT      &kp DOWN   &kp UP       &kp RIGHT      &kp LA(BACKSPACE)  &none
-&none  &kp LG(Z)      &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LC(B)                             &kp LA(LEFT)  &kp TAB    &kp LS(TAB)  &kp LA(RIGHT)  &kp LG(FSLH)       &none
-                      &none      &none         &mt LGUI TAB  &mt LSHFT SPACE  &lt 11 RET    &none  &none         &none      &none        &none
+&none  &kp LC(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                           &kp LG(LEFT)  &kp PG_DN  &kp PG_UP    &kp LG(RIGHT)  &kp INS            &none
+&none  &kp LGUI       &kp LALT   &kp LSHFT     &kp LCTRL     &kp PRCNT                           &kp LEFT      &kp DOWN   &kp UP       &kp RIGHT      &kp LA(BACKSPACE)  &none
+&none  &kp LG(Z)      &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LC(B)                           &kp LA(LEFT)  &kp TAB    &kp LS(TAB)  &kp LA(RIGHT)  &kp LG(FSLH)       &none
+                      &none      &none         &mt LGUI DEL  &mt LSHFT RET  &lt 11 TAB    &none  &none         &none      &none        &none
             >;
         };
 
