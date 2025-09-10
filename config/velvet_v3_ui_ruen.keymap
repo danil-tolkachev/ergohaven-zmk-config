@@ -76,19 +76,19 @@
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <7 8>;
-            layers = <2 3>;
+            layers = <1 3>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <8 9>;
-            layers = <2 3>;
+            layers = <1 3>;
         };
 
         yo {
             bindings = <&kp RU_CYRILLIC_IO>;
             key-positions = <4 5>;
-            layers = <2>;
+            layers = <1>;
         };
 
         yo_mac {
@@ -100,13 +100,13 @@
         en {
             bindings = <&layer_en>;
             key-positions = <2 3>;
-            layers = <2>;
+            layers = <1>;
         };
 
         en_none {
             bindings = <&none>;
             key-positions = <2 3>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         en_mac {
@@ -124,25 +124,25 @@
         ru_none {
             bindings = <&none>;
             key-positions = <3 4>;
-            layers = <3 2>;
+            layers = <3 1>;
         };
 
         ru_mac {
             bindings = <&layer_ru_mac>;
             key-positions = <3 4>;
-            layers = <1>;
+            layers = <2>;
         };
 
         en_nums {
             bindings = <&layer_combo 4 10>;
             key-positions = <40 39>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         ru_nums {
             bindings = <&layer_combo 5 10>;
             key-positions = <39 40>;
-            layers = <2>;
+            layers = <1>;
         };
 
         ru_mac_nums {
@@ -154,7 +154,7 @@
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <31 32>;
-            layers = <0 1 2 3 4 5 6 10>;
+            layers = <0 2 1 3 4 5 6 10>;
         };
 
         tmux_hor {
@@ -224,7 +224,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 2 &to_ru>;
+            bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -233,7 +233,7 @@
         layer_en_mac: layer_en_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_en_mac>;
+            bindings = <&to 2 &to_en_mac>;
             label = "LAYER_EN_MAC";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -285,7 +285,7 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &bt BT_SEL 1>;
+            bindings = <&to 2 &bt BT_SEL 1>;
             label = "BT_MAC";
         };
 
@@ -323,16 +323,6 @@
             >;
         };
 
-        en_mac {
-            display-name = "Base ";
-            bindings = <
-&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                     &nm N6 Y     &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
-&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                        &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V         &kp B                                        &kp N        &kp M         &kp COMMA     &kp DOT      &kp SQT              &none
-                    &none        &none         &mt LGUI ESC  &mt LSHFT RET  &lt 4 TAB    &lt 8 BACKSPACE  &lt 9 SPACE  &trans        &trans        &trans
-            >;
-        };
-
         ru {
             display-name = "Ru";
             bindings = <
@@ -340,6 +330,16 @@
 &none  &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE  &none
 &none  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
                                    &none                       &none                      &mt LCTRL ESC             &mt LSHFT RET          &lt 5 TAB    &lt 7 BACKSPACE  &lt 9 SPACE            &trans                     &trans                     &trans
+            >;
+        };
+
+        en_mac {
+            display-name = "Base ";
+            bindings = <
+&none  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                     &nm N6 Y     &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P             &none
+&none  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                        &kp H        &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V         &kp B                                        &kp N        &kp M         &kp COMMA     &kp DOT      &kp SQT              &none
+                    &none        &none         &mt LGUI ESC  &mt LSHFT RET  &lt 4 TAB    &lt 8 BACKSPACE  &lt 9 SPACE  &trans        &trans        &trans
             >;
         };
 
