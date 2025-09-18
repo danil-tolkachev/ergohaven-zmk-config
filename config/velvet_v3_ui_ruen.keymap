@@ -188,6 +188,7 @@
         scrl {
             bindings = <&trbl_td>;
             key-positions = <44 45>;
+            layers = <0 13>;
         };
 
         scrl2 {
