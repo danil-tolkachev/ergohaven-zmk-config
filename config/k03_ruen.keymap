@@ -178,10 +178,10 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp RU_CYRILLIC_IO  &kp N1                    &kp N2                      &kp N3                     &kp N4                    &kp N5                                              &kp N6              &kp N7                     &kp N8                     &kp N9                    &kp N0               &kp RU_CYRILLIC_HARD_SIGN
-&kp UNDER           &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
-&kp MINUS           &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &none
-&none               &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none          &none            &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E    &none
+&kp RU_CYRILLIC_IO  &kp N1                    &kp N2                      &kp N3                     &kp N4                    &kp N5                                              &kp N6              &kp N7                     &kp N8                     &kp N9                    &kp N0                     &kp RU_CYRILLIC_HARD_SIGN
+&kp UNDER           &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE         &kp RU_CYRILLIC_HA
+&kp MINUS           &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE  &none
+&none               &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none          &none            &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
                                               &sk LGUI                    &sk LALT                   &mt LCTRL ESC             &mt LSHIFT RET      &lt 3 SPACE    &lt 4 BACKSPACE  &kp SPACE           &none                      &none                      &none
             >;
 
@@ -219,10 +219,10 @@
 
         nav {
             bindings = <
-&kp F12  &kp F1         &kp F2     &kp F3        &kp F4        &kp F5                      &kp F6        &kp F7     &kp F8     &kp F9         &kp F10   &kp F11
-&none    &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)  &kp LC(T)                   &kp HOME      &kp PG_DN  &kp PG_UP  &kp END        &kp INS   &kp DEL
-&none    &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL     &none                       &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp BSPC  &kp LC(BACKSPACE)
-&none    &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)     &kp LC(B)   &none    &none  &kp LC(LEFT)  &none      &none      &kp LC(RIGHT)  &kp RET   &kp LC(ENTER)
+&kp F12  &kp F1         &kp F2     &kp F3        &kp F4        &kp F5                      &kp F6        &kp F7     &kp F8     &kp F9         &kp F10            &kp F11
+&none    &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)  &kp LC(T)                   &kp HOME      &kp PG_DN  &kp PG_UP  &kp END        &kp INS            &kp DEL
+&none    &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL     &none                       &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp LC(BACKSPACE)  &none
+&none    &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)     &kp LC(B)   &none    &none  &kp LC(LEFT)  &none      &none      &kp LC(RIGHT)  &kp LC(FSLH)       &none
                         &none      &none         &kp LCTRL     &kp LSHIFT  &mo 5    &none  &none         &none      &none      &none
             >;
 
@@ -231,10 +231,10 @@
 
         adj {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4  &bt BT_CLR_ALL
-&trans       &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans        &trans            &trans        &studio_unlock
-&trans       &trans  &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE        &trans        &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &trans        &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4         &bt BT_CLR_ALL
+&trans       &trans  &trans  &trans  &trans  &trans                    &trans        &kp C_BRI_DN  &kp C_BRI_UP  &trans            &kp PRINTSCREEN      &studio_unlock
+&trans       &trans  &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE        &kp LA(PRINTSCREEN)  &trans
+&trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &kp LS(PRINTSCREEN)  &trans
                      &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans
             >;
 
