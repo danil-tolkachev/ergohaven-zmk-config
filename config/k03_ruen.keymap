@@ -51,6 +51,13 @@
             #binding-cells = <1>;
             release-after-ms = <500>;
         };
+
+        enc_alt_tab: enc_alt_tab {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENC_ALT_TAB";
+            #sensor-binding-cells = <0>;
+            bindings = <&swapper LALT TAB>, <&swapper LALT LS(TAB)>;
+        };
     };
 
     combos {
@@ -190,7 +197,7 @@
             display-name = "Base";
             sensor-bindings =
                 <&enc_vol>,
-                <&enc_vol>,
+                <&enc_alt_tab>,
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
