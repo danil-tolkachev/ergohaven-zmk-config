@@ -134,8 +134,8 @@
             bindings = <
 &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4         &kp N5                                        &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &none
 &kp UNDER  &kp Q   &kp W     &kp E     &kp R          &kp T                                         &kp Y      &kp U   &kp I      &kp O    &kp P     &none
-&kp MINUS  &kp A   &kp S     &kp D     &kp F          &kp G                                         &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&none      &kp Z   &kp X     &kp C     &kp V          &kp B          &kp K_MUTE    &kp K_MUTE       &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &none
+&kp MINUS  &kp A   &kp S     &kp D     &kp F          &kp G                                         &kp H      &kp J   &kp K      &kp L    &kp SEMI  &none
+&none      &kp Z   &kp X     &kp C     &kp V          &kp B          &kp K_MUTE    &kp K_MUTE       &kp N      &kp M   &kp COMMA  &kp DOT  &kp SQT   &none
                    &sk LGUI  &sk LALT  &mt LCTRL ESC  &mt LSHFT RET  &lt 2 TAB     &lt 4 BACKSPACE  &kp SPACE  &none   &none      &none
             >;
 
@@ -154,8 +154,8 @@
             bindings = <
 &kp RU_CYRILLIC_IO  &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                              &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0               &kp RU_CYRILLIC_HARD_SIGN
 &kp UNDER           &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
-&kp MINUS           &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&none               &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &none          &none            &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &none                &none
+&kp MINUS           &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &none
+&none               &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &none          &none            &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &none
                                              &sk LGUI              &sk LALT            &mt LCTRL ESC       &mt LSHIFT RET      &lt 3 SPACE    &lt 4 BACKSPACE  &kp SPACE           &none                      &none                &none
             >;
 
@@ -170,11 +170,11 @@
 
         sym_en {
             bindings = <
-&none  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &none
-&none  &kp GRAVE  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                  &kp LBRC   &kp LBKT   &kp RBKT   &kp RBRC   &kp DQT   &none
-&none  &kp PLUS   &kp MINUS  &kp LT    &kp GT    &kp EQUAL                  &kp EXCL   &kp LPAR   &kp RPAR   &kp COLON  &kp SEMI  &kp SQT
-&none  &kp TILDE  &kp STAR   &kp PIPE  &kp AMPS  &kp BSLH   &none    &none  &kp QMARK  &kp CARET  &kp COMMA  &kp DOT    &kp FSLH  &none
-                  &none      &none     &none     &none      &none    &mo 5  &none      &none      &none      &none
+&none  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                               &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &none
+&none  &kp GRAVE  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                            &kp LBRC   &kp LBKT   &kp RBKT   &kp RBRC   &kp DQT   &none
+&none  &kp PLUS   &kp MINUS  &kp LT    &kp GT    &kp EQUAL                            &kp EXCL   &kp LPAR   &kp RPAR   &kp COLON  &kp SEMI  &kp SQT
+&none  &kp TILDE  &kp STAR   &kp PIPE  &kp AMPS  &kp BSLH   &none    &none            &kp QMARK  &kp CARET  &kp COMMA  &kp DOT    &kp FSLH  &none
+                  &none      &none     &none     &none      &none    &lt 5 BACKSPACE  &kp SPACE  &none      &none      &none
             >;
 
             display-name = "Symbols";
@@ -183,11 +183,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&none  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp N6        &kp N7     &kp N8        &kp N9        &kp N0        &none
-&none  &en GRAVE  &en AT     &en HASH  &en DLLR  &kp PRCNT                    &en LBRC      &en LBKT   &en RBKT      &en RBRC      &kp RU_DQT    &none
-&none  &kp PLUS   &kp MINUS  &en LT    &en GT    &kp EQUAL                    &kp EXCL      &kp LPAR   &kp RPAR      &kp RU_COLON  &kp RU_SEMI   &en SQT
-&none  &en TILDE  &kp STAR   &en PIPE  &en AMPS  &kp RU_BSLH  &none    &none  &kp RU_QMARK  &en CARET  &kp RU_COMMA  &kp RU_DOT    &kp RU_SLASH  &none
-                  &none      &none     &none     &none        &none    &mo 5  &none         &none      &none         &none
+&none  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                                 &kp N6        &kp N7     &kp N8        &kp N9        &kp N0        &none
+&none  &en GRAVE  &en AT     &en HASH  &en DLLR  &kp PRCNT                              &en LBRC      &en LBKT   &en RBKT      &en RBRC      &kp RU_DQT    &none
+&none  &kp PLUS   &kp MINUS  &en LT    &en GT    &kp EQUAL                              &kp EXCL      &kp LPAR   &kp RPAR      &kp RU_COLON  &kp RU_SEMI   &en SQT
+&none  &en TILDE  &kp STAR   &en PIPE  &en AMPS  &kp RU_BSLH  &none    &none            &kp RU_QMARK  &en CARET  &kp RU_COMMA  &kp RU_DOT    &kp RU_SLASH  &none
+                  &none      &none     &none     &none        &none    &lt 5 BACKSPACE  &kp SPACE     &none      &none         &none
             >;
         };
 
