@@ -174,7 +174,7 @@
                 <&macro_press>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &sticky_swap MACRO_PLACEHOLDER>,
+                <&macro_param_2to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &sticky_swap MACRO_PLACEHOLDER>,
                 <&macro_release>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
 
