@@ -163,7 +163,14 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sticky_alt LEFT_ALT &kp TAB &sticky_alt LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp TAB &sticky_alt LALT>,
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "ALT_TAB";
         };
     };
