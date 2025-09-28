@@ -142,11 +142,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&none  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &none
-&none  &kp GRAVE  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                  &kp LBRC   &kp LBKT   &kp RBKT   &kp RBRC   &kp DQT   &none
-&none  &kp PLUS   &kp MINUS  &kp LT    &kp GT    &kp EQUAL                  &kp EXCL   &kp LPAR   &kp RPAR   &kp COLON  &kp SEMI  &kp SQT
-&none  &kp TILDE  &kp STAR   &kp PIPE  &kp AMPS  &kp BSLH   &none    &none  &kp QMARK  &kp CARET  &kp COMMA  &kp DOT    &kp FSLH  &none
-                  &none      &none     &none     &none      &none    &none  &none      &none      &none      &none
+&none  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp N6        &kp N7     &kp N8        &kp N9        &kp N0        &none
+&none  &en GRAVE  &en AT     &en HASH  &en DLLR  &kp PRCNT                    &en LBRC      &en LBKT   &en RBKT      &en RBRC      &kp RU_DQT    &none
+&none  &kp PLUS   &kp MINUS  &en LT    &en GT    &kp EQUAL                    &kp EXCL      &kp LPAR   &kp RPAR      &kp RU_COLON  &kp RU_SEMI   &en SQT
+&none  &en TILDE  &kp STAR   &en PIPE  &en AMPS  &kp RU_BSLH  &none    &none  &kp RU_QMARK  &en CARET  &kp RU_COMMA  &kp RU_DOT    &kp RU_SLASH  &none
+                  &none      &none     &none     &none        &none    &none  &none         &none      &none         &none
             >;
         };
 
