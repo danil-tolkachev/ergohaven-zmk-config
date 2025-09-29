@@ -248,11 +248,11 @@
 
         nav {
             bindings = <
-&kp F12  &kp F1         &kp F2     &kp F3        &kp F4        &kp F5                      &kp F6        &kp F7     &kp F8                     &kp F9                 &kp F10            &kp F11
-&none    &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)  &kp LC(T)                   &kp HOME      &kp PG_DN  &kp PG_UP                  &kp END                &kp INS            &kp DEL
-&none    &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL     &none                       &kp LEFT      &kp DOWN   &kp UP                     &kp RIGHT              &kp LC(BACKSPACE)  &none
-&none    &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)     &kp LC(B)   &none    &none  &kp LC(LEFT)  &none      &none                      &kp LC(RIGHT)          &kp LC(FSLH)       &none
-                        &none      &none         &kp LCTRL     &kp LSHIFT  &mo 5    &none  &none         &none      &swapper LALT LS(LC(TAB))  &swapper LALT LC(TAB)
+&kp F12  &kp F1         &kp F2     &kp F3        &kp F4         &kp F5                            &kp F6        &kp F7     &kp F8                     &kp F9                 &kp F10            &kp F11
+&none    &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                         &kp HOME      &kp PG_DN  &kp PG_UP                  &kp END                &kp INS            &kp DEL
+&none    &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL      &none                             &kp LEFT      &kp DOWN   &kp UP                     &kp RIGHT              &kp LC(BACKSPACE)  &none
+&none    &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)         &none    &none  &kp LC(LEFT)  &none      &none                      &kp LC(RIGHT)          &kp LC(FSLH)       &none
+                        &none      &none         &mt LCTRL ESC  &mt LSHIFT ENTER  &mo 5    &none  &none         &none      &swapper LALT LS(LC(TAB))  &swapper LALT LC(TAB)
             >;
 
             display-name = "Navigation";
