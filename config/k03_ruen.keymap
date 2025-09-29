@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENC_ALT_TAB";
             #sensor-binding-cells = <0>;
-            bindings = <&swapper LALT TAB>, <&swapper LALT LS(TAB)>;
+            bindings = <&swapper LALT LC(TAB)>, <&swapper LALT LS(LC(TAB))>;
         };
     };
 
@@ -252,7 +252,7 @@
 &none    &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)  &kp LC(T)                   &kp HOME      &kp PG_DN  &kp PG_UP                  &kp END                &kp INS            &kp DEL
 &none    &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL     &none                       &kp LEFT      &kp DOWN   &kp UP                     &kp RIGHT              &kp LC(BACKSPACE)  &none
 &none    &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)     &kp LC(B)   &none    &none  &kp LC(LEFT)  &none      &none                      &kp LC(RIGHT)          &kp LC(FSLH)       &none
-                        &none      &none         &kp LCTRL     &kp LSHIFT  &mo 5    &none  &none         &none      &swapper LC(LALT) LS(TAB)  &swapper LC(LALT) TAB
+                        &none      &none         &kp LCTRL     &kp LSHIFT  &mo 5    &none  &none         &none      &swapper LALT LS(LC(TAB))  &swapper LALT LC(TAB)
             >;
 
             display-name = "Navigation";
