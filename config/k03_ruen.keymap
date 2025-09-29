@@ -260,11 +260,11 @@
 
         adj {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4         &bt BT_CLR_ALL
-&trans       &trans  &trans  &trans  &trans  &trans                    &trans        &kp C_BRI_DN  &kp C_BRI_UP  &trans            &kp PRINTSCREEN      &studio_unlock
-&trans       &trans  &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE        &kp LA(PRINTSCREEN)  &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &kp LS(PRINTSCREEN)  &trans
-                     &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans
+&bootloader  &trans  &trans          &trans          &trans          &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4         &bt BT_CLR_ALL
+&trans       &trans  &kp LA(LG(N1))  &kp LA(LG(N2))  &kp LA(LG(N3))  &trans                    &trans        &kp C_BRI_DN  &kp C_BRI_UP  &trans            &kp PRINTSCREEN      &studio_unlock
+&trans       &trans  &kp LA(LG(N4))  &kp LA(LG(N5))  &kp LA(LG(N6))  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE        &kp LA(PRINTSCREEN)  &trans
+&trans       &trans  &kp LA(LG(N7))  &kp LA(LG(N8))  &kp LA(LG(N9))  &trans  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &kp LS(PRINTSCREEN)  &trans
+                     &trans          &trans          &trans          &trans  &trans    &trans  &trans        &trans        &trans        &trans
             >;
 
             display-name = "Adjust";
