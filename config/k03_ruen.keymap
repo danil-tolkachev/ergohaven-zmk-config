@@ -63,6 +63,24 @@
     combos {
         compatible = "zmk,combos";
 
+        kha {
+            bindings = <&kp RU_CYRILLIC_HA>;
+            key-positions = <6 7>;
+            layers = <2 3>;
+        };
+
+        hrdsgn {
+            bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
+            key-positions = <7 8>;
+            layers = <2 3>;
+        };
+
+        yo {
+            bindings = <&kp RU_CYRILLIC_IO>;
+            key-positions = <4 3>;
+            layers = <2>;
+        };
+
         cmben {
             bindings = <&layer_en>;
             key-positions = <15 14>;
