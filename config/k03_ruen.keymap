@@ -86,6 +86,8 @@
             key-positions = <15 14>;
             layers = <1>;
             require-prior-idle-ms = <200>;
+            slow-release;
+            timeout-ms = <50>;
         };
 
         cmbru {
@@ -93,6 +95,8 @@
             key-positions = <15 16>;
             layers = <0>;
             require-prior-idle-ms = <200>;
+            slow-release;
+            timeout-ms = <50>;
         };
 
         cmben_none {
@@ -100,6 +104,8 @@
             key-positions = <15 14>;
             layers = <0>;
             require-prior-idle-ms = <200>;
+            slow-release;
+            timeout-ms = <50>;
         };
 
         cmbru_none {
@@ -107,6 +113,8 @@
             key-positions = <15 16>;
             layers = <1>;
             require-prior-idle-ms = <200>;
+            slow-release;
+            timeout-ms = <50>;
         };
 
         underscore {
