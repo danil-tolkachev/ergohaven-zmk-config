@@ -65,19 +65,19 @@
 
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <6 7>;
+            key-positions = <19 20>;
             layers = <2 3>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <7 8>;
+            key-positions = <20 21>;
             layers = <2 3>;
         };
 
         yo {
             bindings = <&kp RU_CYRILLIC_IO>;
-            key-positions = <4 3>;
+            key-positions = <16 17>;
             layers = <2>;
         };
 
@@ -85,24 +85,28 @@
             bindings = <&layer_en>;
             key-positions = <15 14>;
             layers = <1>;
+            require-prior-idle-ms = <300>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <15 16>;
             layers = <0>;
+            require-prior-idle-ms = <300>;
         };
 
         cmben_none {
             bindings = <&none>;
             key-positions = <15 14>;
             layers = <0>;
+            require-prior-idle-ms = <300>;
         };
 
         cmbru_none {
             bindings = <&none>;
             key-positions = <15 16>;
             layers = <1>;
+            require-prior-idle-ms = <300>;
         };
 
         underscore {
