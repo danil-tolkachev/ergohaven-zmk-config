@@ -85,28 +85,28 @@
             bindings = <&layer_en>;
             key-positions = <15 14>;
             layers = <1>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <15 16>;
             layers = <0>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         cmben_none {
             bindings = <&none>;
             key-positions = <15 14>;
             layers = <0>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         cmbru_none {
             bindings = <&none>;
             key-positions = <15 16>;
             layers = <1>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         underscore {
