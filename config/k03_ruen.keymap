@@ -66,47 +66,47 @@
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <19 20>;
-            layers = <2 3>;
+            layers = <1>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <20 21>;
-            layers = <2 3>;
+            layers = <1>;
         };
 
         yo {
             bindings = <&kp RU_CYRILLIC_IO>;
             key-positions = <16 17>;
-            layers = <2>;
+            layers = <1>;
         };
 
         cmben {
             bindings = <&layer_en>;
             key-positions = <15 14>;
             layers = <1>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <100>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <15 16>;
             layers = <0>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <100>;
         };
 
         cmben_none {
             bindings = <&none>;
             key-positions = <15 14>;
             layers = <0>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <100>;
         };
 
         cmbru_none {
             bindings = <&none>;
             key-positions = <15 16>;
             layers = <1>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <100>;
         };
 
         underscore {
