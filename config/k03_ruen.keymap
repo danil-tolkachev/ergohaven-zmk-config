@@ -250,7 +250,7 @@
 
             sensor-bindings =
                 <&enc_vol>,
-                <&enc_vol>,
+                <&enc_alt_tab>,
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
