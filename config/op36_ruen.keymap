@@ -414,11 +414,11 @@
         };
 
         adj {
-            display-name = " Adj";
+            display-name = "Adjust";
             bindings = <
   &bt_pc      &bt_mac       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &kp C_BRI_DN  &kp C_BRI_UP  &none       &kp PRINTSCREEN
   &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &none         &kp F24                       &none  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp LA(PRINTSCREEN)
-  &none       &none         &none         &none         &kp F23                       &none  &kp C_PREV    &kp C_NEXT    &kp C_PP    &kp LS(PRINTSCREEN)
+  &none       &none         &kp CAPS      &none         &kp F23                       &none  &kp C_PREV    &kp C_NEXT    &kp C_PP    &kp LS(PRINTSCREEN)
                                           &none         &none         &none    &none  &none  &none
             >;
         };
