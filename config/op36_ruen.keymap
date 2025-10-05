@@ -304,7 +304,7 @@
         };
 
         en_mac {
-            display-name = " Base";
+            display-name = " Base";
             bindings = <
   &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                     &nm N6 Y      &nm N7 U           &nm N8 I      &nm N9 O     &nm N0 P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                        &kp H         &hmr RCTRL J       &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
@@ -324,7 +324,7 @@
         };
 
         ru_mac {
-            display-name = "󱌭 Ru";
+            display-name = " Ru";
             bindings = <
   &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                                &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
@@ -334,7 +334,7 @@
         };
 
         sym_en {
-            display-name = "#5577ff 󱔁 Sym#";
+            display-name = "#7799ff 󱔁 #Sym";
             bindings = <
   &nm N1 GRAVE    &nm N2 AT_SIGN   &nm N3 HASH     &nm N4 DLLR    &nm N5 PRCNT                            &nm N6 LBRC   &nm N7 LBKT      &nm N8 RBKT       &nm N9 RBRC      &nm N0 DQT
   &hml LGUI PLUS  &hml LALT MINUS  &hml LSHIFT LT  &hml LCTRL GT  &kp EQUAL                               &kp EXCL      &hmr RCTRL LPAR  &hmr RSHIFT RPAR  &hmr RALT COLON  &hmr RGUI SEMI
@@ -344,7 +344,7 @@
         };
 
         sym_en_mac {
-            display-name = "#5577ff 󱔁 Sym#";
+            display-name = "#7799ff  #Sym";
             bindings = <
   &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                            &nm N6 LBRC   &nm N7 LBKT    &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT
   &kp PLUS      &kp MINUS       &kp LT       &kp GT       &kp EQUAL                               &kp EXCL      &kp LPAR       &kp RPAR     &kp COLON    &kp SEMI
@@ -354,7 +354,7 @@
         };
 
         sym_ru {
-            display-name = "#5577ff 󱔁 Sym#";
+            display-name = "#7799ff 󱔁 #Sym";
             bindings = <
   &en GRAVE  &en AT_SIGN  &en HASH  &en DLLR  &kp PRCNT                                   &en LBRC      &en LBKT       &en RBKT      &en RBRC      &kp RU_DQT
   &kp PLUS   &kp MINUS    &en LT    &en GT    &kp EQUAL                                   &kp EXCL      &kp LPAR       &kp RPAR      &kp RU_COLON  &kp RU_SEMI
@@ -364,7 +364,7 @@
         };
 
         sym_ru_mac {
-            display-name = "#󱔁 Sym#";
+            display-name = "#7799ff  #Sym";
             bindings = <
   &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                            &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT
   &kp PLUS       &kp MINUS        &en_mac LT    &en_mac GT    &kp EQUAL                                &kp EXCL      &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)
@@ -374,7 +374,7 @@
         };
 
         nav {
-            display-name = "#ff7733  Nav#";
+            display-name = "#ff7733  #Nav";
             bindings = <
   &kp LC(GRAVE)       &kp LC(W)            &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                           &kp HOME      &kp PG_DN      &kp PG_UP  &kp END        &kp INS
   &hml LGUI LC(PLUS)  &hml LALT LC(MINUS)  &sk LSHFT     &sk LCTRL      &none                               &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
@@ -384,7 +384,7 @@
         };
 
         nav_mac {
-            display-name = "#ff7733  Nav#";
+            display-name = "#ff7733  #Nav";
             bindings = <
   &kp LC(GRAVE)  &kp LG(W)  &kp LG(LBKT)  &kp LG(RBKT)  &kp LG(T)                           &kp LG(LEFT)  &kp PG_DN      &kp PG_UP  &kp LG(RIGHT)  &kp INS
   &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL     &none                               &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LA(BACKSPACE)
@@ -414,7 +414,7 @@
         };
 
         adj {
-            display-name = "Adjust";
+            display-name = "#ffff33  #Adjust";
             bindings = <
   &bt_pc      &bt_mac       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &kp C_BRI_DN  &kp C_BRI_UP  &none       &kp PRINTSCREEN
   &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &none         &kp F24                       &none  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp LA(PRINTSCREEN)
