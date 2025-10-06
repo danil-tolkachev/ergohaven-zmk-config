@@ -226,7 +226,7 @@
 
             display-name = "Base";
             sensor-bindings =
-                <&enc_vol>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&enc_alt_tab>,
                 <&enc_vol>,
                 <&enc_vol>,
