@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     flavor = "balanced";
@@ -57,6 +58,15 @@
             label = "ENC_ALT_TAB";
             #sensor-binding-cells = <0>;
             bindings = <&swapper LALT LC(TAB)>, <&swapper LALT LS(LC(TAB))>;
+        };
+
+        enc_mouse_scroll_ver: enc_mouse_scroll_ver {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENC_MOUSE_SCROLL_VER";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
         };
     };
 
@@ -226,7 +236,7 @@
 
             display-name = "Base";
             sensor-bindings =
-                <&enc_vol>,
+                <&enc_mouse_scroll_ver>,
                 <&enc_alt_tab>,
                 <&enc_vol>,
                 <&enc_vol>,
@@ -290,11 +300,11 @@
 
         adj {
             bindings = <
-&bootloader  &trans  &trans          &trans          &trans          &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4         &bt BT_CLR_ALL
-&trans       &trans  &kp LA(LG(N1))  &kp LA(LG(N2))  &kp LA(LG(N3))  &trans                    &trans        &kp C_BRI_DN  &kp C_BRI_UP  &trans            &kp PRINTSCREEN      &studio_unlock
-&trans       &trans  &kp LA(LG(N4))  &kp LA(LG(N5))  &kp LA(LG(N6))  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE        &kp LA(PRINTSCREEN)  &trans
-&trans       &trans  &kp LA(LG(N7))  &kp LA(LG(N8))  &kp LA(LG(N9))  &trans  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_NEXT    &kp K_PLAY_PAUSE  &kp LS(PRINTSCREEN)  &trans
-                     &trans          &trans          &trans          &trans  &trans    &trans  &trans        &trans        &trans        &trans
+&bootloader  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                  &none         &kp LS(C_BRI_UP)  &kp LS(C_BRI_DN)  &none             &none                &none
+&bt BT_CLR   &out OUT_TOG  &kp LA(LG(N1))  &kp LA(LG(N2))  &kp LA(LG(N3))  &none                         &none         &kp C_BRI_DN      &kp C_BRI_UP      &none             &kp PRINTSCREEN      &studio_unlock
+&none        &none         &kp LA(LG(N4))  &kp LA(LG(N5))  &kp LA(LG(N6))  &none                         &out OUT_BLE  &kp C_VOL_DN      &kp C_VOL_UP      &kp K_MUTE        &kp LA(PRINTSCREEN)  &none
+&none        &none         &kp LA(LG(N7))  &kp LA(LG(N8))  &kp LA(LG(N9))  &none         &none    &none  &out OUT_USB  &kp K_PREV        &kp K_NEXT        &kp K_PLAY_PAUSE  &kp LS(PRINTSCREEN)  &none
+                           &none           &none           &none           &none         &none    &none  &none         &none             &none             &none
             >;
 
             display-name = "Adjust";
