@@ -334,7 +334,7 @@
         };
 
         sym_en {
-            display-name = "#7799ff 󱔁 Sym#";
+            display-name = "#7799ff 󱔁  Sym#";
             bindings = <
   &nm N1 GRAVE    &nm N2 AT_SIGN   &nm N3 HASH     &nm N4 DLLR    &nm N5 PRCNT                            &nm N6 LBRC   &nm N7 LBKT      &nm N8 RBKT       &nm N9 RBRC      &nm N0 DQT
   &hml LGUI PLUS  &hml LALT MINUS  &hml LSHIFT LT  &hml LCTRL GT  &kp EQUAL                               &kp EXCL      &hmr RCTRL LPAR  &hmr RSHIFT RPAR  &hmr RALT COLON  &hmr RGUI SEMI
@@ -354,7 +354,7 @@
         };
 
         sym_ru {
-            display-name = "#7799ff 󱔁 Sym#";
+            display-name = "#7799ff 󱔁  Sym#";
             bindings = <
   &en GRAVE  &en AT_SIGN  &en HASH  &en DLLR  &kp PRCNT                                   &en LBRC      &en LBKT       &en RBKT      &en RBRC      &kp RU_DQT
   &kp PLUS   &kp MINUS    &en LT    &en GT    &kp EQUAL                                   &kp EXCL      &kp LPAR       &kp RPAR      &kp RU_COLON  &kp RU_SEMI
@@ -374,7 +374,7 @@
         };
 
         nav {
-            display-name = "#ff7733  Nav#";
+            display-name = "#ff7733   Nav#";
             bindings = <
   &kp LC(GRAVE)       &kp LC(W)            &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                           &kp HOME      &kp PG_DN      &kp PG_UP  &kp END        &kp INS
   &hml LGUI LC(PLUS)  &hml LALT LC(MINUS)  &sk LSHFT     &sk LCTRL      &none                               &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
@@ -414,7 +414,7 @@
         };
 
         adj {
-            display-name = "#ffff33   Adjust#";
+            display-name = "  Adjust";
             bindings = <
   &bt_pc      &bt_mac       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &kp C_BRI_DN  &kp C_BRI_UP  &none       &kp PRINTSCREEN
   &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &none         &kp F24                       &none  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp LA(PRINTSCREEN)
