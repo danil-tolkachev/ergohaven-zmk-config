@@ -301,9 +301,9 @@
         adj {
             bindings = <
 &bootloader  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                  &none         &kp LS(C_BRI_UP)  &kp LS(C_BRI_DN)  &none             &none                &none
-&bt BT_CLR   &out OUT_TOG  &kp LA(LG(N1))  &kp LA(LG(N2))  &kp LA(LG(N3))  &none                         &none         &kp C_BRI_DN      &kp C_BRI_UP      &none             &kp PRINTSCREEN      &studio_unlock
+&bt BT_CLR   &out OUT_TOG  &kp LA(LG(N1))  &kp LA(LG(N2))  &kp LA(LG(N3))  &kp F24                       &none         &kp C_BRI_DN      &kp C_BRI_UP      &none             &kp PRINTSCREEN      &studio_unlock
 &none        &none         &kp LA(LG(N4))  &kp LA(LG(N5))  &kp LA(LG(N6))  &kp F23                       &out OUT_BLE  &kp C_VOL_DN      &kp C_VOL_UP      &kp K_MUTE        &kp LA(PRINTSCREEN)  &none
-&none        &none         &kp LA(LG(N7))  &kp LA(LG(N8))  &kp LA(LG(N9))  &kp F24       &none    &none  &out OUT_USB  &kp K_PREV        &kp K_NEXT        &kp K_PLAY_PAUSE  &kp LS(PRINTSCREEN)  &none
+&none        &none         &kp LA(LG(N7))  &kp LA(LG(N8))  &kp LA(LG(N9))  &none         &none    &none  &out OUT_USB  &kp K_PREV        &kp K_NEXT        &kp K_PLAY_PAUSE  &kp LS(PRINTSCREEN)  &none
                            &none           &none           &none           &none         &none    &none  &none         &none             &none             &none
             >;
 
