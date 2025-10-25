@@ -143,6 +143,50 @@
             key-positions = <41 29>;
             layers = <4>;
         };
+
+        cmb_space {
+            bindings = <&kp SPACE>;
+            key-positions = <46 47>;
+        };
+
+        cmb_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <47 48>;
+        };
+
+        cmb_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <33 34>;
+        };
+
+        cmb_ctrl_backspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <33 34 32>;
+        };
+
+        cmb_dot {
+            bindings = <&kp DOT>;
+            key-positions = <38 39>;
+            layers = <0>;
+        };
+
+        cmb_dot_ru {
+            bindings = <&kp RU_DOT>;
+            key-positions = <38 39>;
+            layers = <1>;
+        };
+
+        cmb_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <39 40>;
+            layers = <0>;
+        };
+
+        cmb_comma_ru {
+            bindings = <&kp RU_COMMA>;
+            key-positions = <39 40>;
+            layers = <1>;
+        };
     };
 
     macros {
