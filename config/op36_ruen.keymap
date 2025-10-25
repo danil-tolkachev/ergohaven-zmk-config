@@ -153,6 +153,21 @@
             key-positions = <32 33>;
             layers = <0 2 1 3>;
         };
+
+        cmb_back {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 19>;
+        };
+
+        cmb_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <28 29>;
+        };
+
+        cmb_esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
