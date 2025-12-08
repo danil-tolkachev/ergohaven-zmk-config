@@ -280,7 +280,7 @@
 
             display-name = "Base";
             sensor-bindings =
-                <&enc_mouse_scroll_ver>,
+                <&enc_vol>,
                 <&enc_alt_tab>,
                 <&enc_vol>,
                 <&enc_vol>,
