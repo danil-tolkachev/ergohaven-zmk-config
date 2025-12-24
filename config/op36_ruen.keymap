@@ -375,27 +375,27 @@
   &nm N1 GRAVE    &nm N2 AT_SIGN   &nm N3 HASH     &nm N4 DLLR    &nm N5 PRCNT                            &nm N6 LBRC   &nm N7 LBKT      &nm N8 RBKT       &nm N9 RBRC      &nm N0 DQT
   &hml LGUI PLUS  &hml LALT MINUS  &hml LSHIFT LT  &hml LCTRL GT  &kp EQUAL                               &kp EXCL      &hmr RCTRL LPAR  &hmr RSHIFT RPAR  &hmr RALT COLON  &hmr RGUI SEMI
   &kp TILDE       &kp STAR         &kp PIPE        &kp AMPS       &kp BSLH                                &kp QMARK     &kp CARET        &kp COMMA         &kp DOT          &kp FSLH
-                                                   &none          &mo 11        &none    &lt 8 BACKSPACE  &lt 11 SPACE  &kp BACKSPACE
+                                                   &none          &mo 11        &none    &lt 8 BACKSPACE  &lt 11 SPACE  &mo 11
             >;
         };
 
         sym_en_mac {
             display-name = "#7799ff  Sym#";
             bindings = <
-  &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                            &nm N6 LBRC   &nm N7 LBKT    &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT
-  &kp PLUS      &kp MINUS       &kp LT       &kp GT       &kp EQUAL                               &kp EXCL      &kp LPAR       &kp RPAR     &kp COLON    &kp SEMI
-  &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                                &kp QMARK     &kp CARET      &kp COMMA    &kp DOT      &kp FSLH
-                                             &none        &mo 11        &none    &lt 9 BACKSPACE  &lt 11 SPACE  &kp BACKSPACE
+  &nm N1 GRAVE  &nm N2 AT_SIGN  &nm N3 HASH  &nm N4 DLLR  &nm N5 PRCNT                            &nm N6 LBRC   &nm N7 LBKT  &nm N8 RBKT  &nm N9 RBRC  &nm N0 DQT
+  &kp PLUS      &kp MINUS       &kp LT       &kp GT       &kp EQUAL                               &kp EXCL      &kp LPAR     &kp RPAR     &kp COLON    &kp SEMI
+  &kp TILDE     &kp STAR        &kp PIPE     &kp AMPS     &kp BSLH                                &kp QMARK     &kp CARET    &kp COMMA    &kp DOT      &kp FSLH
+                                             &none        &mo 11        &none    &lt 9 BACKSPACE  &lt 11 SPACE  &mo 11
             >;
         };
 
         sym_ru {
             display-name = "#7799ff 󱔁  Sym#";
             bindings = <
-  &en GRAVE  &en AT_SIGN  &en HASH  &en DLLR  &kp PRCNT                                   &en LBRC      &en LBKT       &en RBKT      &en RBRC      &kp RU_DQT
-  &kp PLUS   &kp MINUS    &en LT    &en GT    &kp EQUAL                                   &kp EXCL      &kp LPAR       &kp RPAR      &kp RU_COLON  &kp RU_SEMI
-  &en TILDE  &kp STAR     &en PIPE  &en AMPS  &kp RU_BACKSLASH                            &kp RU_QMARK  &en CARET      &kp RU_COMMA  &kp RU_DOT    &kp RU_FSLH
-                                    &none     &mo 11            &none    &lt 8 BACKSPACE  &lt 11 SPACE  &kp BACKSPACE
+  &en GRAVE  &en AT_SIGN  &en HASH  &en DLLR  &kp PRCNT                                   &en LBRC      &en LBKT   &en RBKT      &en RBRC      &kp RU_DQT
+  &kp PLUS   &kp MINUS    &en LT    &en GT    &kp EQUAL                                   &kp EXCL      &kp LPAR   &kp RPAR      &kp RU_COLON  &kp RU_SEMI
+  &en TILDE  &kp STAR     &en PIPE  &en AMPS  &kp RU_BACKSLASH                            &kp RU_QMARK  &en CARET  &kp RU_COMMA  &kp RU_DOT    &kp RU_FSLH
+                                    &none     &mo 11            &none    &lt 8 BACKSPACE  &lt 11 SPACE  &mo 11
             >;
         };
 
@@ -405,7 +405,7 @@
   &en_mac GRAVE  &en_mac AT_SIGN  &en_mac HASH  &en_mac DLLR  &en_mac PRCNT                            &en_mac LBRC  &kp LS(GRAVE)  &kp GRAVE   &en_mac RBRC  &kp RU_DQT
   &kp PLUS       &kp MINUS        &en_mac LT    &en_mac GT    &kp EQUAL                                &kp EXCL      &kp LPAR       &kp RPAR    &kp LS(N5)    &kp LS(N8)
   &en_mac TILDE  &en_mac STAR     &en_mac PIPE  &en_mac AMPS  &en_mac BSLH                             &kp QMARK     &en_mac CARET  &kp LS(N6)  &kp LS(N7)    &kp FSLH
-                                                &none         &mo 11         &none    &lt 9 BACKSPACE  &lt 11 SPACE  &kp BACKSPACE
+                                                &none         &mo 11         &none    &lt 9 BACKSPACE  &lt 11 SPACE  &mo 11
             >;
         };
 
@@ -415,7 +415,7 @@
   &kp LC(GRAVE)       &kp LC(W)            &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                           &kp HOME      &kp PG_DN      &kp PG_UP  &kp END        &kp INS
   &hml LGUI LC(PLUS)  &hml LALT LC(MINUS)  &sk LSHFT     &sk LCTRL      &none                               &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
   &kp LC(Z)           &kp LC(X)            &kp LC(C)     &kp LC(V)      &kp LC(B)                           &kp LC(LEFT)  &kp BACKSPACE  &kp DEL    &kp LC(RIGHT)  &kp LC(FSLH)
-                                                         &mt LCTRL DEL  &mt LSHFT RET  &lt 12 TAB    &none  &none         &none
+                                                         &mt LCTRL DEL  &mt LSHFT RET  &lt 12 TAB    &none  &mo 13        &none
             >;
         };
 
