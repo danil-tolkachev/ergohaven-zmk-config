@@ -332,20 +332,20 @@
         en {
             display-name = "  Base";
             bindings = <
-  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                     &nm N6 Y      &nm N7 U           &nm N8 I      &nm N9 O     &nm N0 P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                        &kp H         &hmr RCTRL J       &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V          &kp B                                        &kp N         &kp M              &kp COMMA     &kp DOT      &kp SQT
-                                          &mt LCTRL ESC  &mt LSHFT RET  &lt 4 TAB    &lt 8 BACKSPACE  &lt 10 SPACE  &layer_combo 11 4
+  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R       &nm N5 T                                     &nm N6 Y      &nm N7 U       &nm N8 I      &nm N9 O     &nm N0 P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                        &kp H         &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V          &kp B                                        &kp N         &kp M          &kp COMMA     &kp DOT      &kp SQT
+                                          &mt LCTRL ESC  &mt LSHFT RET  &lt 4 TAB    &lt 8 BACKSPACE  &lt 10 SPACE  &lt 14 DELETE
             >;
         };
 
         en_mac {
             display-name = " Base";
             bindings = <
-  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                     &nm N6 Y      &nm N7 U           &nm N8 I      &nm N9 O     &nm N0 P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                        &kp H         &hmr RCTRL J       &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V         &kp B                                        &kp N         &kp M              &kp COMMA     &kp DOT      &kp SQT
-                                          &mt LGUI ESC  &mt LSHFT RET  &lt 5 TAB    &lt 9 BACKSPACE  &lt 10 SPACE  &layer_combo 11 5
+  &nm N1 Q     &nm N2 W     &nm N3 E      &nm N4 R      &nm N5 T                                     &nm N6 Y      &nm N7 U      &nm N8 I      &nm N9 O     &nm N0 P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                        &kp H         &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V         &kp B                                        &kp N         &kp M         &kp COMMA     &kp DOT      &kp SQT
+                                          &mt LGUI ESC  &mt LSHFT RET  &lt 5 TAB    &lt 9 BACKSPACE  &lt 10 SPACE  &lt 14 DEL
             >;
         };
 
@@ -355,7 +355,7 @@
   &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                                &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                     &mt LCTRL ESC             &mt LSHFT RET          &lt 6 TAB    &lt 8 BACKSPACE  &lt 10 SPACE           &layer_combo 11 6
+                                                                                     &mt LCTRL ESC             &mt LSHFT RET          &lt 6 TAB    &lt 8 BACKSPACE  &lt 10 SPACE           &lt 14 DEL
             >;
         };
 
@@ -365,7 +365,7 @@
   &nm N1 RU_CYRILLIC_SHORT_I  &nm N2 RU_CYRILLIC_TSE      &nm N3 RU_CYRILLIC_U       &nm N4 RU_CYRILLIC_KA     &nm N5 RU_CYRILLIC_IE                                &nm N6 RU_CYRILLIC_EN  &nm N7 RU_CYRILLIC_GHE     &nm N8 RU_CYRILLIC_SHA     &nm N9 RU_CYRILLIC_SHCHA  &nm N0 RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF    &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                   &kp RU_CYRILLIC_ER     &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE     &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                     &mt LGUI ESC              &mt LSHFT RET          &lt 7 TAB    &lt 9 BACKSPACE  &lt 10 SPACE           &layer_combo 11 7
+                                                                                     &mt LGUI ESC              &mt LSHFT RET          &lt 7 TAB    &lt 9 BACKSPACE  &lt 10 SPACE           &lt 14 DEL
             >;
         };
 
@@ -466,6 +466,15 @@
   &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
   &none  &none     &none     &none     &none                  &none           &none           &none         &none            &none
                              &none     &none  &none    &none  &none           &none
+            >;
+        };
+
+        Numpad {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                            &trans  &kp KP_N7        &kp KP_N8        &kp KP_N9  &trans
+  &trans  &trans  &trans  &trans  &trans                            &trans  &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3  &kp KP_N0
+  &trans  &trans  &trans  &trans  &kp KP_NUMLOCK                    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6  &kp KP_DOT
+                          &trans  &trans          &trans    &trans  &trans  &trans
             >;
         };
     };
