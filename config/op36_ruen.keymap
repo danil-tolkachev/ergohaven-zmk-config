@@ -412,10 +412,10 @@
         nav {
             display-name = "#ff7733 Nav#";
             bindings = <
-  &kp LC(GRAVE)       &kp LC(W)            &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                           &kp HOME      &kp PG_DN      &kp PG_UP  &kp END        &kp INS
-  &hml LGUI LC(PLUS)  &hml LALT LC(MINUS)  &sk LSHFT     &sk LCTRL      &none                               &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
-  &kp LC(Z)           &kp LC(X)            &kp LC(C)     &kp LC(V)      &kp LC(B)                           &kp LC(LEFT)  &kp BACKSPACE  &kp DEL    &kp LC(RIGHT)  &kp LC(FSLH)
-                                                         &mt LCTRL DEL  &mt LSHFT RET  &lt 13 TAB    &none  &mo 14        &none
+  &kp LC(GRAVE)  &kp LC(W)  &kp LC(LBKT)  &kp LC(RBKT)   &kp LC(T)                           &kp HOME      &kp PG_DN      &kp PG_UP  &kp END        &kp INS
+  &sk LGUI       &sk LALT   &sk LSHFT     &sk LCTRL      &none                               &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT      &kp LC(BACKSPACE)
+  &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)      &kp LC(B)                           &kp LC(LEFT)  &kp BACKSPACE  &kp DEL    &kp LC(RIGHT)  &kp LC(FSLH)
+                                          &mt LCTRL DEL  &mt LSHFT RET  &lt 13 TAB    &none  &mo 14        &none
             >;
         };
 
